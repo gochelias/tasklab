@@ -1,0 +1,30 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"display": "Default",
+	"compilerOptions": {
+		/* Language and Environment */
+		"target": "ES2022",
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
+
+		/* Modules */
+		"module": "CommonJS",
+		"resolveJsonModule": true,
+		"moduleResolution": "node",
+
+		/* Emit */
+		"declaration": false,
+
+		/* Type Checking */
+		"strict": true,
+		"strictPropertyInitialization": false,
+
+		/* Interop Constraints */
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"allowSyntheticDefaultImports": true,
+
+		/* Completeness */
+		"skipLibCheck": true
+	},
+	"exclude": ["node_modules"]
+}

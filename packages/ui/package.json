@@ -1,0 +1,26 @@
+{
+	"name": "@tasklab/ui",
+	"author": "@gochelias",
+	"license": "MIT",
+	"version": "0.0.0",
+	"main": "./index.tsx",
+	"types": "./index.tsx",
+	"scripts": {
+		"build": "tsc",
+		"lint": "eslint *.ts*",
+		"clean": "rimraf .turbo build"
+	},
+	"devDependencies": {
+		"@tasklab/config": "*",
+		"@types/react": "18.0.9",
+		"@types/react-dom": "18.0.3",
+		"autoprefixer": "10.4.7",
+		"eslint": "8.15.0",
+		"postcss": "8.4.13",
+		"react": "18.1.0",
+		"rimraf": "3.0.2",
+		"tailwindcss": "3.0.24",
+		"typescript": "4.6.4",
+		"tsconfig": "*"
+	}
+}

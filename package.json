@@ -1,0 +1,43 @@
+{
+	"name": "tasklab",
+	"author": "@gochelias",
+	"license": "MIT",
+	"version": "0.0.0",
+	"private": true,
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
+	"scripts": {
+		"build": "turbo run build",
+		"dev": "turbo run dev --parallel",
+		"lint": "turbo run lint",
+		"test": "turbo run test",
+		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
+		"clean": "turbo run clean && rimraf ./node_modules",
+		"prepare": "husky install",
+		"prisma:init": "turbo run prisma:init",
+		"docker:up": "docker-compose up",
+		"docker:down": "docker-compose down",
+		"test:e2e": "yarn docker:up && yarn prisma:init"
+	},
+	"devDependencies": {
+		"@tasklab/config": "*",
+		"@commitlint/cli": "16.2.4",
+		"@commitlint/config-conventional": "16.2.4",
+		"@types/jest": "27.5.1",
+		"husky": "8.0.1",
+		"jest": "28.1.0",
+		"jest-mock-extended": "2.0.6",
+		"prettier": "2.6.2",
+		"rimraf": "3.0.2",
+		"ts-jest": "28.0.2",
+		"turbo": "latest",
+		"typescript": "^4.6.4"
+	},
+	"engines": {
+		"yarn": ">=1.22.18",
+		"node": ">=16.15.0"
+	},
+	"packageManager": "yarn@1.22.18"
+}

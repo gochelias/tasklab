@@ -1,0 +1,19 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"display": "@tasklab/server",
+	"extends": "@tasklab/config/tsconfig-server.json",
+	"include": ["."],
+	"exclude": [
+		"dist",
+		"node_modules",
+		"src/**/*.spec.ts",
+		"e2e",
+		"src/**/**test"
+	],
+	"compilerOptions": {
+		/* Emit */
+		"outDir": "./dist",
+
+		"strictNullChecks": true
+	}
+}
