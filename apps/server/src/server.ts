@@ -26,18 +26,19 @@ const plugins = async (): Promise<void> => {
 };
 
 export const init = async (): Promise<Server> => {
-	appRoute(server);
-
 	await plugins();
+
+	appRoute(server);
 	await server.initialize();
 
 	return server;
 };
 
 export const start = async (): Promise<Server> => {
+	await plugins();
+
 	server.logger.info(`Mode: ${process.env.NODE_ENV}`);
 
-	await plugins();
 	await server.app.prisma.$connect();
 	await server.start();
 
