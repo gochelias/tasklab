@@ -42,7 +42,6 @@ export const mockUsers: User[] = [
 ];
 
 export const mockCreateUserDto: CreateUserDto = {
-	avatar: 'http://api.tasklab.com/v1/img/01234567890123456789',
 	name: 'Jack Ryan',
 	username: 'jackryan',
 	email: 'jack@email.com',

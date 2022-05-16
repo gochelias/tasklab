@@ -14,11 +14,11 @@ export const userRoutes = (server: Server) => {
 			request: Request,
 			h: ResponseToolkit,
 		): Promise<ResponseObject> => {
-			const { avatar, name, username, email, password } =
+			const { name, username, email, password } =
 				request.payload as CreateUserDto;
 
 			const user = await createUser(
-				{ avatar, name, username, email, password },
+				{ name, username, email, password },
 				request.server.app.prisma,
 			);
 			return h.response(user);

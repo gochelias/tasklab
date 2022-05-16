@@ -16,7 +16,6 @@ export const createUser = async (
 	const user = await prisma.user
 		.create({
 			data: {
-				avatar: createUserDto.avatar,
 				name: createUserDto.name,
 				username: createUserDto.username,
 				email: createUserDto.email,
