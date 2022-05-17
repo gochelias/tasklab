@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.sidebar-icon {
+		@apply flex px-4 py-3 space-x-3 rounded-xl text-black
+			hover:bg-blue-600 hover:text-white
+            transition-all duration-75 ease-linear;
+	}
+}

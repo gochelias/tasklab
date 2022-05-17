@@ -3,8 +3,8 @@
 	"author": "@gochelias",
 	"license": "MIT",
 	"version": "0.0.0",
-	"main": "./index.tsx",
-	"types": "./index.tsx",
+	"main": "./src/index.tsx",
+	"types": "./src/index.tsx",
 	"scripts": {
 		"build": "tsc",
 		"lint": "eslint *.ts*",

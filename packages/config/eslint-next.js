@@ -6,6 +6,8 @@ module.exports = {
 		'@next/next/no-html-link-for-pages': 'off',
 		'react/jsx-key': 'off',
 		'no-unused-vars': 'off',
+		'import/prefer-default-export': 'off',
+		'import/extensions': 'off',
 		'@typescript-eslint/no-unused-vars': ['error'],
 	},
 };

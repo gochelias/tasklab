@@ -8,7 +8,8 @@
 	"files": [
 		"tsconfig.server.json",
 		"eslint-server.js",
-		"jest-server.js"
+		"jest-server.js",
+		"eslint-next.js"
 	],
 	"dependencies": {
 		"@typescript-eslint/eslint-plugin": "5.23.0",
