@@ -1,6 +1,6 @@
 import '../src/styles/index.css';
 
-export * from './components/sidebar/Home';
-export * from './components/sidebar/Calendar';
-export * from './components/sidebar/User';
-export * from './components/sidebar/Settings';
+export * from './icons/CategoryIcon';
+export * from './icons/CalendarIcon';
+export * from './icons/SettingsIcon';
+export * from './icons/SearchIcon';

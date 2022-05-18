@@ -3,9 +3,16 @@
 @tailwind utilities;
 
 @layer components {
-	.sidebar-icon {
-		@apply flex px-4 py-3 space-x-3 rounded-xl text-black
-			hover:bg-blue-600 hover:text-white
-            transition-all duration-75 ease-linear;
+	.sidebar-button {
+		@apply flex px-4 py-3 space-x-4 rounded-xl text-black;
+	}
+
+	.sidebar-button-hover {
+		@apply hover:bg-[#F2F2F7]
+			transition-all duration-75 ease-linear;
+	}
+
+	.sidebar-button-active {
+		@apply bg-[#007AFF] hover:bg-[#007AFF] text-white;
 	}
 }

@@ -1,30 +1,20 @@
-import { Home, Calendar, User, Settings } from '@tasklab/ui';
-import Link from 'next/link';
+import { Dashboard } from './Dashboard';
+import { Timeline } from './Timeline';
+import { Settings } from './Settings';
+import { Search } from './Search';
+import { User } from './User';
 
 export const Sidebar = () => (
-	<div className="flex flex-col w-64 h-screen border-r border-gray-200 justify-between">
-		<div>Tasklab</div>
-		<div className="px-4">
-			<ul className="space-y-4">
-				<li>
-					<Link href="/">
-						<a>
-							<Home />
-						</a>
-					</Link>
-				</li>
-				<li>
-					<Link href="/calendar">
-						<a>
-							<Calendar />
-						</a>
-					</Link>
-				</li>
-			</ul>
+	<div className="flex flex-col w-64 h-screen border-r border-gray-200 justify-between select-none">
+		<div className="p-4 space-y-4">
+			<Search />
 		</div>
-		<div>
-			<Settings />
-			<hr className="border-gray-200" />
+		<div className="px-4 space-y-4">
+			<Dashboard href="/" />
+			<Timeline href="/timeline" />
+		</div>
+		<div className="p-4 space-y-4">
+			<Settings href="/settings" />
 			<User />
 		</div>
 	</div>
