@@ -1,4 +1,6 @@
-export const CalendarIcon = ({ active }: any) => {
+import { Icon } from './icon.interface';
+
+export const CalendarIcon = ({ active = false }: Icon) => {
 	return active ? (
 		<svg
 			width="24"

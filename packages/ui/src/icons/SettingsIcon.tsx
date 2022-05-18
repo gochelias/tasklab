@@ -1,4 +1,6 @@
-export const SettingsIcon = ({ active }: any) => {
+import { Icon } from './icon.interface';
+
+export const SettingsIcon = ({ active = false }: Icon) => {
 	return active ? (
 		<svg
 			width="24"

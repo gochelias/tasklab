@@ -1,17 +1,20 @@
-import { CategoryIcon } from '@tasklab/ui';
+import { CategoryIcon, SidebarButton } from '@tasklab/ui';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { SidebarButton } from './SidebarButton';
 
 export const Dashboard = ({ href }: any) => {
 	const router = useRouter();
 	const active = router.pathname === href;
 
 	return (
-		<SidebarButton
-			text="Dashboard"
-			icon={<CategoryIcon active={active} />}
-			href={href}
-			active={active}
-		/>
+		<Link href={href}>
+			<a>
+				<SidebarButton
+					icon={<CategoryIcon active={active} />}
+					text="Settings"
+					active={active}
+				/>
+			</a>
+		</Link>
 	);
 };

@@ -1,4 +1,6 @@
-export const CategoryIcon = ({ active }: any) => {
+import { Icon } from './icon.interface';
+
+export const CategoryIcon = ({ active = false }: Icon) => {
 	return active ? (
 		<svg
 			width="24"

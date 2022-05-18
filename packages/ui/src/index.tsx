@@ -4,3 +4,5 @@ export * from './icons/CategoryIcon';
 export * from './icons/CalendarIcon';
 export * from './icons/SettingsIcon';
 export * from './icons/SearchIcon';
+
+export * from './components/SidebarButton';

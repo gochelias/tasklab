@@ -1,4 +1,4 @@
-import { CalendarIcon } from '@tasklab/ui';
+import { CalendarIcon, SidebarButton } from '@tasklab/ui';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
@@ -8,15 +8,12 @@ export const Timeline = ({ href }: any) => {
 
 	return (
 		<Link href={href}>
-			<a
-				className={
-					active
-						? 'sidebar-button sidebar-button-active'
-						: 'sidebar-button sidebar-button-hover'
-				}
-			>
-				<CalendarIcon active={active} />
-				<span>Timeline</span>
+			<a className="flex">
+				<SidebarButton
+					icon={<CalendarIcon active={active} />}
+					text="Timelines"
+					active={active}
+				/>
 			</a>
 		</Link>
 	);

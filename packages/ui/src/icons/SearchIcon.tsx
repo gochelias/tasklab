@@ -1,4 +1,6 @@
-export const SearchIcon = ({ active = false }: any) => {
+import { Icon } from './icon.interface';
+
+export const SearchIcon = ({ active = false }: Icon) => {
 	return active ? (
 		<svg
 			width="24"

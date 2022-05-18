@@ -1,4 +1,4 @@
-import { SettingsIcon } from '@tasklab/ui';
+import { SettingsIcon, SidebarButton } from '@tasklab/ui';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
@@ -8,15 +8,12 @@ export const Settings = ({ href }: any) => {
 
 	return (
 		<Link href={href}>
-			<a
-				className={
-					active
-						? 'sidebar-button sidebar-button-active'
-						: 'sidebar-button sidebar-button-hover'
-				}
-			>
-				<SettingsIcon active={active} />
-				<span>Settings</span>
+			<a>
+				<SidebarButton
+					icon={<SettingsIcon active={active} />}
+					text="Settings"
+					active={active}
+				/>
 			</a>
 		</Link>
 	);
