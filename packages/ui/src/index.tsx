@@ -12,3 +12,4 @@ export * from './icons/MessagesIcon';
 export * from './components/SidebarButton';
 export * from './components/IconButton';
 export * from './components/Tabs';
+export * from './components/Tag';
