@@ -1,6 +1,7 @@
 import { IconButton, MaximizeIcon, SettingsIcon } from '@tasklab/ui';
 
 import { Fragment } from 'react';
+import { Tag } from './Tag';
 import { TaskTabs } from './TaskTabs';
 
 export const TaskPreview = () => (
@@ -14,14 +15,10 @@ export const TaskPreview = () => (
 				<h1 className="text-3xl font-semibold dark:text-[#f2f2f7] ">
 					Title Example
 				</h1>
-				<div className="my-4 text-sm space-x-2 py-4">
-					<span className="text-violet-600 bg-violet-100 px-3 py-2 rounded-xl">
-						Style Guide
-					</span>
-					<span className="text-orange-600 bg-orange-100 px-3 py-2 rounded-xl">
-						Design System
-					</span>
-					<span className="px-3 py-2 rounded-2xl">+</span>
+				<div className="flex my-4 text-sm space-x-2 py-4">
+					<Tag label="Style Guide" emoji="🚀" />
+					<Tag label="Design System" />
+					{/* <span className="px-3 py-2 rounded-2xl">+</span> */}
 				</div>
 			</div>
 			<div className="h-full overflow-hidden">

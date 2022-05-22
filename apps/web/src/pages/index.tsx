@@ -17,7 +17,7 @@ export default function Web() {
 							</div>
 						</div>
 						<span className="font-semibold py-4 dark:text-[#f2f2f7]">
-							Title Example
+							Title Example Title Example Title Example
 						</span>
 					</div>
 				</div>
