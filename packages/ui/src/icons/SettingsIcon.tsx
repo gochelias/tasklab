@@ -1,11 +1,19 @@
 import { Icon } from './icon.interface';
 
-export const SettingsIcon = ({ active = false }: Icon) => {
+export const SettingsIcon = ({
+	active = false,
+	width,
+	height,
+	size = 24,
+}: Icon) => {
+	const w = width ? width.toString() : size.toString();
+	const h = height ? height.toString() : size.toString();
+
 	return active ? (
 		<svg
-			width="24"
-			height="24"
-			viewBox="0 0 24 24"
+			width={w}
+			height={h}
+			viewBox={`0 0 ${w} ${h}`}
 			fill="currentColor"
 			xmlns="http://www.w3.org/2000/svg"
 		>
@@ -13,9 +21,9 @@ export const SettingsIcon = ({ active = false }: Icon) => {
 		</svg>
 	) : (
 		<svg
-			width="24"
-			height="24"
-			viewBox="0 0 24 24"
+			width={w}
+			height={h}
+			viewBox={`0 0 ${w} ${h}`}
 			fill="currentColor"
 			xmlns="http://www.w3.org/2000/svg"
 		>

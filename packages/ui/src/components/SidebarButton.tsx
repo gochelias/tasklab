@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 
-interface ISidebarButton {
+interface SidebarButton {
 	icon: ReactElement;
 	text: string;
 	active: boolean;
@@ -10,7 +10,7 @@ export const SidebarButton = ({
 	icon,
 	text,
 	active = false,
-}: ISidebarButton) => (
+}: SidebarButton) => (
 	<div
 		className={
 			active
@@ -19,6 +19,6 @@ export const SidebarButton = ({
 		}
 	>
 		{icon}
-		<span>{text}</span>
+		<span className="my-auto">{text}</span>
 	</div>
 );

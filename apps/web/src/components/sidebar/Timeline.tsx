@@ -11,7 +11,7 @@ export const Timeline = ({ href }: any) => {
 			<a className="flex">
 				<SidebarButton
 					icon={<CalendarIcon active={active} />}
-					text="Timelines"
+					text="Timeline"
 					active={active}
 				/>
 			</a>

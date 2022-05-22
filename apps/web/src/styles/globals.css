@@ -8,4 +8,14 @@
 	* {
 		font-family: 'Poppins';
 	}
+
+	#__next {
+		@apply w-screen 
+		h-screen 
+		dark:bg-[#1C1C1E]
+		dark:text-[#f2f2f7]
+		transition-all
+		ease-linear
+		duration-200;
+	}
 }

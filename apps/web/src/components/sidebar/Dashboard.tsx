@@ -11,7 +11,7 @@ export const Dashboard = ({ href }: any) => {
 			<a>
 				<SidebarButton
 					icon={<CategoryIcon active={active} />}
-					text="Settings"
+					text="Dashboard"
 					active={active}
 				/>
 			</a>
