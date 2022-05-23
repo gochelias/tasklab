@@ -1,32 +1,23 @@
-import { IconButton, MaximizeIcon, SettingsIcon, Tag } from '@tasklab/ui';
+import { IconButton, MoreIcon } from '@tasklab/ui';
+import { Tab } from '@headlessui/react';
 
-import { Fragment } from 'react';
-import { TaskTabs } from './TaskTabs';
+import { Tabs } from './Tabs';
+import { Panels } from './Panels';
 
 export const TaskPreview = () => (
-	<Fragment>
+	<>
 		<div className="h-full overflow-hidden">
-			<div>
-				<div className="flex space-x-4 mb-4 justify-end">
-					<IconButton icon={<MaximizeIcon />} />
-					<IconButton icon={<SettingsIcon />} />
+			<Tab.Group>
+				<div className="flex space-x-4 py-4 justify-end items-center">
+					<Tab.List className="flex space-x-4">
+						<Tabs />
+					</Tab.List>
+					<IconButton icon={<MoreIcon />} />
 				</div>
-				<h1 className="text-3xl font-semibold dark:text-[#f2f2f7] ">
-					Title Example
-				</h1>
-				<div className="flex my-4 text-sm space-x-2 py-4">
-					<button className="tag">
-						<Tag label="Style Guide" emoji="🚀" />
-					</button>
-					<button className="tag">
-						<Tag label="Design System" />
-					</button>
-					{/* <span className="px-3 py-2 rounded-2xl">+</span> */}
-				</div>
-			</div>
-			<div className="h-full overflow-hidden">
-				<TaskTabs />
-			</div>
+				<Tab.Panels className="mt-4 h-96 overflow-y-auto ">
+					<Panels />
+				</Tab.Panels>
+			</Tab.Group>
 		</div>
-	</Fragment>
+	</>
 );

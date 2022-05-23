@@ -20,13 +20,13 @@
 
 	.icon-button {
 		@apply p-3
-		rounded-2xl
-		text-black
-		dark:text-[#f2f2f7]
-		hover:bg-[#f2f2f7]
-		dark:hover:bg-[#2C2C2E]
+		rounded-2xl;
+	}
+
+	.icon-button-hover {
+		@apply hover:bg-[#f2f2f7] dark:hover:bg-[#2C2C2E]
 		transition-all
-		duration-75
+		duration-100
 		ease-linear;
 	}
 
@@ -37,17 +37,6 @@
 		overflow-hidden
 		border-[#f2f2f7]
 		dark:border-[#2C2C2E];
-	}
-
-	.tab {
-		@apply px-4 
-		py-3
-		rounded-2xl
-		text-black;
-	}
-
-	.tab-active {
-		@apply bg-white;
 	}
 
 	.tag {

@@ -8,6 +8,8 @@ export * from './icons/NotificationIcon';
 export * from './icons/MaximizeIcon';
 export * from './icons/AddSquareIcon';
 export * from './icons/MessagesIcon';
+export * from './icons/DocumentTextIcon';
+export * from './icons/MoreIcon';
 
 export * from './components/SidebarButton';
 export * from './components/IconButton';
