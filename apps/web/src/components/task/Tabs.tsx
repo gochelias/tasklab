@@ -14,7 +14,7 @@ export const Tabs = () => {
 					key={tab.key}
 					className={({ selected }: any) =>
 						selected
-							? 'icon-button icon-button-hover rounded-2xl w-12 h-12 ring-offset-2 ring-2 ring-[#E5E5EA]'
+							? 'icon-button icon-button-hover rounded-2xl outline outline-offset-2 outline-2 outline-[#E5E5EA]'
 							: 'icon-button icon-button-hover'
 					}
 				>

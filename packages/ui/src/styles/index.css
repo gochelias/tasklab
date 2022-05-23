@@ -26,7 +26,7 @@
 	.icon-button-hover {
 		@apply hover:bg-[#f2f2f7] dark:hover:bg-[#2C2C2E]
 		transition-all
-		duration-100
+		duration-75
 		ease-linear;
 	}
 
