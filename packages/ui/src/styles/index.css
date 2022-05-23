@@ -52,6 +52,7 @@
 		duration-75
 		transition-all
 		border-[#f2f2f7] dark:border-[#3A3A3C]
-		focus:border-[#007AFF] dark:focus:border-[#0A84FF];
+		focus:outline outline-offset-2 outline-2 outline-[#007AFF]
+		dark:focus:outline-[#0A84FF];
 	}
 }
