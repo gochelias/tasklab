@@ -52,7 +52,7 @@
 		duration-75
 		transition-all
 		border-[#f2f2f7] dark:border-[#3A3A3C]
-		focus:outline outline-offset-2 outline-2 outline-[#007AFF]
-		dark:focus:outline-[#0A84FF];
+		focus:border-[#007AFF] dark:focus:border-[#0A84FF]
+		focus:bg-[rgb(0,122,255,0.1)] dark:focus:bg-[rgb(10,132,255,0.2)];
 	}
 }
