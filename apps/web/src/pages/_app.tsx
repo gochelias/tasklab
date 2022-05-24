@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
 	useDarkMode();
 	return (
 		<div className="flex w-full h-screen text-lg">
-			<div className="w-80 ">
+			<div className="w-80 max-w-xs">
 				<Sidebar />
 			</div>
 			<div className="flex flex-auto relative">

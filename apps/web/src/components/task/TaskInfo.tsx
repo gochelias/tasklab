@@ -1,6 +1,6 @@
 import { Tag } from '@tasklab/ui';
 
-export const Task = () => (
+export const TaskInfo = () => (
 	<>
 		<h1 className="text-3xl font-semibold dark:text-[#f2f2f7] ">
 			Title Example
