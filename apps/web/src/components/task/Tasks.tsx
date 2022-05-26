@@ -1,5 +1,6 @@
 import { MessagesIcon, MoreIcon } from '@tasklab/ui';
 import Image from 'next/image';
+import { Fragment } from 'react';
 
 export const Tasks = () => {
 	const img =
@@ -34,35 +35,39 @@ export const Tasks = () => {
 		},
 	];
 
-	const assigneesAvatars = (avatar: string[], min: number) =>
-		avatar.length > min ? (
+	const assigneesAvatars = (task: Task, min: number) =>
+		task.assignedTo.length > min ? (
 			<>
-				{avatar.slice(-min).map((url: string) => (
+				{task.assignedTo.slice(-min).map((url: string) => (
+					<Fragment key={task.id}>
+						<div className="w-7 h-7 rounded-full bg-white flex justify-center items-center relative">
+							<Image
+								className="w-6 h-6 rounded-full"
+								alt="avatar"
+								width={24}
+								height={24}
+								src={url}
+							/>
+						</div>
+					</Fragment>
+				))}
+				<div className="flex items-center justify-center w-7 h-7 text-xs font-medium text-black bg-[#f2f2f7] border-2 border-white rounded-full relative">
+					+{task.assignedTo.length - min}
+				</div>
+			</>
+		) : (
+			task.assignedTo.map((a: any) => (
+				<Fragment key={task.id}>
 					<div className="w-7 h-7 rounded-full bg-white flex justify-center items-center relative">
 						<Image
 							className="w-6 h-6 rounded-full"
 							alt="avatar"
 							width={24}
 							height={24}
-							src={url}
+							src={a}
 						/>
 					</div>
-				))}
-				<div className="flex items-center justify-center w-7 h-7 text-xs font-medium text-black bg-[#f2f2f7] border-2 border-white rounded-full relative">
-					+{avatar.length - min}
-				</div>
-			</>
-		) : (
-			avatar.map((a: any) => (
-				<div className="w-7 h-7 rounded-full bg-white flex justify-center items-center relative">
-					<Image
-						className="w-6 h-6 rounded-full"
-						alt="avatar"
-						width={24}
-						height={24}
-						src={a}
-					/>
-				</div>
+				</Fragment>
 			))
 		);
 
@@ -90,7 +95,7 @@ export const Tasks = () => {
 					</div>
 					<div className="space-y-3">
 						<div className="flex -space-x-2.5 ">
-							{assigneesAvatars(task.assignedTo, 5)}
+							{assigneesAvatars(task, 5)}
 						</div>
 						<div className="text-[#8E8E93] text-base font-normal">
 							<div className="flex space-x-2">
