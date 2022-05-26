@@ -39,6 +39,19 @@
 		dark:border-[#2C2C2E];
 	}
 
+	.task-tab-active {
+		@apply flex 
+		after:w-3 
+		after:mt-10 
+		icon-button 
+		after:absolute 
+		justify-center 
+		after:border-2 
+		icon-button-hover
+		after:rounded-full 
+		after:border-[#007AFF];
+	}
+
 	.tag {
 		@apply flex
 		px-3 

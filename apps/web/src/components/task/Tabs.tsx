@@ -1,5 +1,10 @@
 import { DocumentTextIcon, MessagesIcon } from '@tasklab/ui';
 import { Tab } from '@headlessui/react';
+import { Fragment } from 'react';
+
+interface Selected {
+	selected: boolean;
+}
 
 export const Tabs = () => {
 	const tabs = [
@@ -7,19 +12,17 @@ export const Tabs = () => {
 		{ key: 'comments', component: <MessagesIcon /> },
 	];
 
+	const active = ({ selected }: Selected): string =>
+		selected
+			? 'task-tab-active after:content-["<br />"]'
+			: 'icon-button icon-button-hover';
+
 	return (
 		<>
 			{tabs.map((tab: any) => (
-				<Tab
-					key={tab.key}
-					className={({ selected }: any) =>
-						selected
-							? 'icon-button icon-button-hover rounded-2xl outline outline-offset-2 outline-2 outline-[#E5E5EA]'
-							: 'icon-button icon-button-hover'
-					}
-				>
-					{tab.component}
-				</Tab>
+				<Fragment key={tab.key}>
+					<Tab className={active}>{tab.component}</Tab>
+				</Fragment>
 			))}
 		</>
 	);

@@ -8,11 +8,13 @@ export const TaskPreview = () => (
 	<>
 		<div className="h-full overflow-hidden">
 			<Tab.Group>
-				<div className="flex space-x-4 py-4 justify-end items-center">
+				<div className="flex space-x-4 mb-8 justify-end items-center">
 					<Tab.List className="flex space-x-4">
 						<Tabs />
 					</Tab.List>
-					<IconButton icon={<MoreIcon />} />
+					<div className="flex flex-col items-center space-y-[2px]">
+						<IconButton icon={<MoreIcon />} />
+					</div>
 				</div>
 				<Tab.Panels className="mt-4 h-96 overflow-y-auto ">
 					<Panels />
