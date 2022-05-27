@@ -13,5 +13,6 @@ export * from './icons/MoreIcon';
 
 export * from './components/SidebarButton';
 export * from './components/IconButton';
-export * from './components/Tabs';
 export * from './components/Tag';
+
+export * from './components/task/TaskTabs';

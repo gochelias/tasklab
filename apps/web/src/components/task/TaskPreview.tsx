@@ -1,7 +1,6 @@
-import { IconButton, MoreIcon } from '@tasklab/ui';
+import { IconButton, MoreIcon, TaskTabs } from '@tasklab/ui';
 import { Tab } from '@headlessui/react';
 
-import { Tabs } from './Tabs';
 import { Panels } from './Panels';
 
 export const TaskPreview = () => (
@@ -10,7 +9,7 @@ export const TaskPreview = () => (
 			<Tab.Group>
 				<div className="flex space-x-4 mb-8 justify-end items-center">
 					<Tab.List className="flex space-x-4">
-						<Tabs />
+						<TaskTabs />
 					</Tab.List>
 					<div className="flex flex-col items-center space-y-[2px]">
 						<IconButton icon={<MoreIcon />} />

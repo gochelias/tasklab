@@ -1,15 +1,16 @@
-import { DocumentTextIcon, MessagesIcon } from '@tasklab/ui';
 import { Tab } from '@headlessui/react';
-import { Fragment } from 'react';
+import { Fragment, ReactElement, ReactPropTypes } from 'react';
+import { DocumentTextIcon } from '../../icons/DocumentTextIcon';
+import { MessagesIcon } from '../../icons/MessagesIcon';
 
 interface Selected {
 	selected: boolean;
 }
 
-export const Tabs = () => {
+export const TaskTabs = () => {
 	const tabs = [
-		{ key: 'task', component: <DocumentTextIcon /> },
-		{ key: 'comments', component: <MessagesIcon /> },
+		{ key: 'task', icon: <DocumentTextIcon /> },
+		{ key: 'comments', icon: <MessagesIcon /> },
 	];
 
 	const active = ({ selected }: Selected): string =>
@@ -21,7 +22,7 @@ export const Tabs = () => {
 		<>
 			{tabs.map((tab: any) => (
 				<Fragment key={tab.key}>
-					<Tab className={active}>{tab.component}</Tab>
+					<Tab className={active}>{tab.icon}</Tab>
 				</Fragment>
 			))}
 		</>

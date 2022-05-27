@@ -7,7 +7,7 @@ export const ModalCreateTask = ({ isOpen, setIsOpen }: any) => {
 	return (
 		<>
 			<Transition appear show={isOpen} as={Fragment}>
-				<Dialog as="div" onClose={closeModal} className="relative z-10">
+				<Dialog as="div" onClose={closeModal} className="relative z-50">
 					<Transition.Child
 						as={Fragment}
 						enter="ease-out duration-200"
