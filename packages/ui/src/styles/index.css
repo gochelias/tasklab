@@ -99,4 +99,25 @@
 		text-[#3A3A3C]
 		bg-white;
 	}
+
+	.task-status {
+		@apply flex 
+		text-base 
+		space-x-3 
+		select-none;
+	}
+
+	.task-status-circles {
+		@apply flex
+		w-6 
+		h-6 
+		justify-center 
+		items-center 
+		border-2 
+		rounded-full 
+		after:w-4 
+		after:h-4 
+		after:absolute  
+		after:rounded-full;
+	}
 }

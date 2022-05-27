@@ -18,3 +18,4 @@ export * from './components/IconButton';
 export * from './components/Tag';
 
 export * from './components/task/TaskTabs';
+export * from './components/task/TaskStatus';
