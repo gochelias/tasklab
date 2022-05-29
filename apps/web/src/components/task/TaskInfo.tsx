@@ -12,7 +12,7 @@ const img =
 const task = {
 	id: '1',
 	title: 'Title example',
-	assignedTo: [img, img, img, img, img, img, img, img],
+	assignedTo: [img, img, img, img, img],
 };
 
 export const TaskInfo = () => (
@@ -41,7 +41,7 @@ export const TaskInfo = () => (
 			<div className="flex items-center space-x-5 text-[#8E8E93] select-none">
 				<ProfileUserIcon />
 				<div className="flex -space-x-3 ">
-					<AvatarsStacked task={task} min="7" />
+					<AvatarsStacked task={task} max="20" isPreview={true} />
 				</div>
 			</div>
 			<div className="flex items-center my-4 space-x-5">
