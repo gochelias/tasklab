@@ -12,6 +12,8 @@ export * from './icons/DocumentTextIcon';
 export * from './icons/MoreIcon';
 export * from './icons/TagIcon';
 export * from './icons/ProfileUserIcon';
+export * from './icons/MoonIcon';
+export * from './icons/SunIcon';
 
 export * from './components/SidebarButton';
 export * from './components/IconButton';
