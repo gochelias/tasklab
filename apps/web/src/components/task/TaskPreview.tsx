@@ -7,8 +7,8 @@ export const TaskPreview = () => (
 	<>
 		<div className="h-full overflow-hidden">
 			<Tab.Group>
-				<div className="flex mb-8 justify-between items-center">
-					<TaskStatus taskStatus="NOT_STARTED" />
+				<div className="mb-8 flex items-center justify-between">
+					<TaskStatus taskStatus="COMPLETED" />
 					<div className="flex space-x-4">
 						<Tab.List className="flex space-x-4">
 							<TaskTabs />

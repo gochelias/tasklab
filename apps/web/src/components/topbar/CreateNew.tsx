@@ -10,7 +10,7 @@ export const CreateNew = () => {
 	return (
 		<>
 			<div className="relative">
-				<Menu as="div" className="relative inline-block text-left z-20">
+				<Menu as="div" className="relative z-20 inline-block text-left">
 					<Menu.Button className="create-new">
 						<AddSquareIcon className="mr-3" active={true} />
 						Create New

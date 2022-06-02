@@ -6,7 +6,52 @@ module.exports = {
 		'../../packages/ui/**/*.{js,ts,jsx,tsx}',
 	],
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				transparent: 'transparent',
+				current: 'currentColor',
+				black: '#1A1C1E',
+				white: '#FFFFFF',
+				100: {
+					light: '#878C98',
+					dark: '#9DA4B3',
+				},
+				200: {
+					light: '#B6BFCE',
+					dark: '#6D757C',
+				},
+				300: {
+					light: '#f1f3f7',
+					dark: '#2E3235',
+				},
+				400: {
+					light: '#F5F7F9',
+					dark: '#282A2E',
+				},
+				red: {
+					light: '#FF3B30',
+					dark: '#FF453A',
+				},
+				orange: {
+					light: '#FF9500',
+					dark: '#FF9F0A',
+				},
+				green: {
+					light: '#34C759',
+					dark: '#30D158',
+				},
+				cyan: {
+					light: '#32ADE6',
+					dark: '#64D2FF',
+				},
+				blue: {
+					dark: '#0A84FF',
+					light: '#007AFF',
+					10: 'rgb(0,122,255,0.1)',
+					20: 'rgb(10,132,255,0.2)',
+				},
+			},
+		},
 	},
 	plugins: [],
 };

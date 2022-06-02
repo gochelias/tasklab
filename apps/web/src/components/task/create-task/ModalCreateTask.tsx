@@ -19,7 +19,7 @@ export const ModalCreateTask = ({ isOpen, setIsOpen }: any) => {
 						leaveTo="opacity-0"
 					>
 						<div
-							className="fixed inset-0 bg-white"
+							className="fixed inset-0 bg-white dark:bg-black"
 							aria-hidden="true"
 						/>
 					</Transition.Child>

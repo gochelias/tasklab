@@ -4,15 +4,15 @@ import { Settings } from './Settings';
 import { User } from './User';
 
 export const Sidebar = () => (
-	<div className="flex flex-col h-screen border-r border-gray-200 dark:border-[hsl(240,2%,18%)] justify-between select-none">
+	<div className="border-300-light dark:border-300-dark flex h-screen select-none flex-col justify-between border-r-2">
 		<div>
-			<div className=" p-4 space-y-4 h-20">Title</div>
-			<div className="px-4 space-y-4 mt-20">
+			<div className=" h-20 space-y-4 p-4">Title</div>
+			<div className="mt-20 space-y-4 px-4">
 				<Dashboard href="/" />
 				<Timeline href="/timeline" />
 			</div>
 		</div>
-		<div className="p-4 space-y-4">
+		<div className="space-y-4 p-4">
 			<Settings href="/settings" />
 			<div>
 				<User href="/@me" />

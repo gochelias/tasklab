@@ -39,12 +39,12 @@ export const Tasks = () => {
 			{tasks.map((task: Task) => (
 				<div
 					key={task.id}
-					className="w-80 h-48 border-2 border-[#f2f2f7] dark:border-[#2C2C2E] rounded-2xl p-4 flex flex-col justify-between"
+					className="flex h-48 w-80 flex-col justify-between rounded-2xl border-2 border-gray-100 p-4 dark:border-gray-600"
 				>
 					<div className="flex flex-col space-y-4">
-						<div className="flex justify-between items-center">
-							<div className="bg-[rgb(0,122,255,0.1)] rounded-lg px-2 py-1">
-								<p className="text-[#007AFF] opacity-100 dark:text-[#0A84FF] text-sm">
+						<div className="flex items-center justify-between">
+							<div className="bg-blue-10 rounded-lg px-2 py-1">
+								<p className="text-blue-light dark:text-blue-dark text-sm opacity-100">
 									In Progress
 								</p>
 							</div>
@@ -52,15 +52,13 @@ export const Tasks = () => {
 								<MoreIcon />
 							</div>
 						</div>
-						<p className="font-semibold dark:text-[#f2f2f7]">
-							{task.title}
-						</p>
+						<p className="font-semibold">{task.title}</p>
 					</div>
 					<div className="space-y-3">
-						<div className="flex -space-x-2.5 ">
+						<div className="flex -space-x-1.5 ">
 							<AvatarsStacked task={task} max="10" />
 						</div>
-						<div className="text-[#8E8E93] text-base font-normal">
+						<div className="text-base font-normal text-gray-500">
 							<div className="flex space-x-2">
 								<MessagesIcon /> <p>3</p>
 							</div>

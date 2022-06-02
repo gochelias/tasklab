@@ -17,17 +17,17 @@ interface AllStatus {
 export const TaskStatus = ({ taskStatus }: TaskStatus) => {
 	const allStatus: AllStatus = {
 		NOT_STARTED: {
-			color: 'border-gray-600 after:bg-gray-300',
+			color: 'bg-200-light ring-200-light/50 dark:bg-200-dark dark:ring-200-dark/50',
 			name: 'Not Started',
 		},
 
 		IN_PROGRESS: {
-			color: 'border-sky-600 after:bg-sky-300',
+			color: 'bg-blue-light ring-blue-light/50 dark:bg-blue-dark dark:ring-blue-dark/50',
 			name: 'In Progress',
 		},
 
 		COMPLETED: {
-			color: 'border-green-600 after:bg-green-200',
+			color: 'bg-green-light ring-green-light/50 dark:bg-green-dark dark:ring-green-darkht/50',
 			name: 'Completed',
 		},
 	};

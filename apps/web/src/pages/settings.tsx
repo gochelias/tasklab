@@ -17,7 +17,7 @@ const SettingsRoute = () => {
 				checked={enabled}
 				onChange={setEnabled}
 				className={`${
-					enabled ? 'bg-[#0A84FF]' : 'bg-[#C7C7CC]'
+					enabled ? 'bg-blue-dark' : 'bg-[#B6BFCE]'
 				} relative inline-flex h-6 w-11 items-center rounded-full`}
 			>
 				<span className="sr-only">Enable notifications</span>

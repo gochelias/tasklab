@@ -17,36 +17,34 @@ const task = {
 
 export const TaskInfo = () => (
 	<>
-		<h1 className="text-3xl font-semibold dark:text-[#f2f2f7] ">
-			Title Example
-		</h1>
-		<div className="space-y-5 my-8">
-			<div className="flex items-center space-x-5 text-[#8E8E93] select-none">
+		<h1 className="text-3xl font-semibold">Title Example</h1>
+		<div className="my-8 space-y-5">
+			<div className="text-100-light dark:text-100-dark flex select-none items-center space-x-5">
 				<CalendarIcon />
 				<p>
 					Started{' '}
 					<span
 						title={startsAtDate}
-						className="text-black underline decoration-[#D1D1D6] decoration-dashed"
+						className="decoration-200-light dark:decoration-200-dark text-black underline dark:text-white"
 					>
 						{startsAt}
 					</span>{' '}
 					and ends{' '}
 					<span
 						title={endsAtDate}
-						className="text-black underline decoration-[#D1D1D6] decoration-dashed"
+						className="decoration-200-light dark:decoration-200-dark text-black underline dark:text-white"
 					>{`${endsAt}`}</span>
 				</p>
 			</div>
-			<div className="flex items-center space-x-5 text-[#8E8E93] select-none">
+			<div className="text-100-light dark:text-100-dark flex select-none items-center space-x-5">
 				<ProfileUserIcon />
-				<div className="flex -space-x-3 ">
+				<div className="flex items-center -space-x-2 ">
 					<AvatarsStacked task={task} max="20" isPreview={true} />
 				</div>
 			</div>
-			<div className="flex items-center my-4 space-x-5">
-				<TagIcon className="text-[#8E8E93]" />
-				<div className="flex text-sm space-x-2 ">
+			<div className="my-4 flex items-center space-x-5">
+				<TagIcon className="text-100-light dark:text-100-dark" />
+				<div className="flex space-x-2 text-sm ">
 					<button className="tag">
 						<Tag label="Style Guide" emoji="🚀" />
 					</button>

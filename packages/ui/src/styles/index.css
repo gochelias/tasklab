@@ -8,116 +8,140 @@
 	}
 
 	.sidebar-button {
-		@apply flex w-full leading-none px-4 py-3 space-x-4 rounded-2xl text-black
-			dark:text-[#F2F2F7];
+		@apply text-100-light 
+		dark:text-100-dark 
+		flex 
+		w-full 
+		space-x-4 
+		rounded-2xl 
+		px-4 
+		py-3 
+		leading-none;
 	}
 
 	.sidebar-button-hover {
-		@apply hover:bg-[#F2F2F7] transition-all duration-75 ease-linear
-			dark:hover:bg-[#2C2C2E];
+		@apply hover:bg-400-light 
+		dark:hover:bg-400-dark
+		transition-all 
+		duration-75 ease-linear;
 	}
 
 	.sidebar-button-active {
-		@apply bg-[#007AFF] hover:bg-[#007AFF] text-white
-			dark:bg-[#0A84FF] dark:text-[#F2F2F7];
+		@apply bg-blue-light 
+		dark:bg-blue-dark
+		text-white 
+		dark:text-white;
 	}
 
 	.icon-button {
-		@apply p-3
-		rounded-2xl;
+		@apply text-100-light
+		rounded-2xl
+		p-3;
 	}
 
 	.icon-button-hover {
-		@apply hover:bg-[#f2f2f7] dark:hover:bg-[#2C2C2E]
+		@apply hover:bg-400-light 
+		dark:hover:bg-400-dark
 		transition-all
 		duration-75
 		ease-linear;
 	}
 
 	.task-preview-container {
-		@apply w-1/3 h-full
-		p-4
-		border-l
+		@apply border-300-light 
+		dark:border-300-dark
+		h-full
+		w-1/3
 		overflow-hidden
-		border-[#f2f2f7]
-		dark:border-[#2C2C2E];
+		border-l-2
+		p-4;
 	}
 
 	.task-tab-active {
-		@apply flex 
-		after:w-3 
-		after:mt-10 
-		icon-button 
-		after:absolute 
+		@apply icon-button 
+		icon-button-hover 
+		flex 
 		justify-center 
+		after:absolute 
+		after:z-10 
+		after:mt-10 
+		after:w-3
+		after:rounded-full
 		after:border-2 
-		icon-button-hover
-		after:z-10
-		after:rounded-full 
 		after:border-[#007AFF];
 	}
 
 	.tag {
-		@apply flex
-		px-3 
-		py-2 
+		@apply border-300-light
+		dark:border-300-dark 
+		flex 
 		h-10
-		text-sm
-		border-2
-		rounded-xl 
 		select-none
-		ease-linear
-		duration-75
+		rounded-xl
+		border-2 
+		px-3
+		py-2
+		text-sm
 		transition-all
-		border-[#f2f2f7] dark:border-[#3A3A3C]
-		focus:border-[#007AFF] dark:focus:border-[#0A84FF]
-		focus:bg-[rgb(0,122,255,0.1)] dark:focus:bg-[rgb(10,132,255,0.2)];
+		duration-75
+		ease-linear 
+		focus:border-[#007AFF]
+		focus:bg-[rgb(0,122,255,0.1)] 
+		dark:focus:border-[#0A84FF] 
+		dark:focus:bg-[rgb(10,132,255,0.2)];
 	}
 
 	.create-new {
-		@apply flex
-		px-4 
-		py-3 
+		@apply bg-blue-light
+		dark:bg-blue-dark 
 		m-auto 
-		text-white
-		rounded-2xl 
-		text-center 
+		flex 
 		items-center
+		rounded-2xl
+		px-4
+		py-3 
+		text-center
 		leading-none
-		bg-[#007AFF] dark:bg-[#0A84FF];
+		text-white 
+		shadow-lg 
+		transition-shadow
+		duration-75
+		ease-in 
+		active:shadow-none;
 	}
 
 	.items-create-new {
-		@apply absolute
-		p-2 
-		mt-4 
-		w-64 
+		@apply dark:bg-400-dark
+		text-100-light 
+		dark:text-100-dark
+		absolute 
 		right-0 
-		shadow-lg 
-		space-y-2 
+		mt-4 
+		w-64
+		space-y-2
 		rounded-3xl 
-		text-[#3A3A3C]
-		bg-white;
+		bg-white
+		p-2
+		shadow-lg;
 	}
 
 	.task-status {
-		@apply flex 
-		text-base 
-		space-x-3 
-		select-none;
+		@apply text-100-light
+		ml-1 
+		flex 
+		select-none 
+		items-center
+		space-x-3
+		text-base;
 	}
 
 	.task-status-circles {
-		@apply flex
-		w-6 
-		h-6 
+		@apply flex 
+		h-4 
+		w-4
+		items-center
 		justify-center 
-		items-center 
-		border-2 
 		rounded-full 
-		after:w-4 
-		after:h-4 
-		after:absolute  
-		after:rounded-full;
+		ring-2;
 	}
 }

@@ -21,8 +21,8 @@ export const ItemCreateNew = ({ icon, label, setOpen }: Item) => {
 					<button
 						onClick={openModal}
 						className={`${
-							active && 'bg-[#f2f2f7]'
-						} flex w-full items-center px-4 py-3 rounded-2xl`}
+							active && 'bg-300-light dark:bg-black'
+						} flex w-full items-center rounded-2xl px-4 py-3`}
 					>
 						{icon}
 						{label}
