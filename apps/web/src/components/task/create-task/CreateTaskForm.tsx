@@ -53,7 +53,7 @@ export const CreateTaskForm = ({ setOpen }: any) => {
 									className="decoration-200-light dark:decoration-200-dark bg-transparent text-black underline dark:text-white "
 									id="startsAt"
 									name="startsAt"
-									type="date"
+									type="datetime-local"
 								/>
 								<label>Ends at </label>
 								<Field

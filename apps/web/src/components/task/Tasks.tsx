@@ -39,7 +39,7 @@ export const Tasks = () => {
 			{tasks.map((task: Task) => (
 				<div
 					key={task.id}
-					className="flex h-48 w-80 flex-col justify-between rounded-2xl border-2 border-gray-100 p-4 dark:border-gray-600"
+					className="dark:border-300-dark border-300-light flex h-48 w-80 flex-col justify-between rounded-2xl border-2 p-4"
 				>
 					<div className="flex flex-col space-y-4">
 						<div className="flex items-center justify-between">
@@ -58,7 +58,7 @@ export const Tasks = () => {
 						<div className="flex -space-x-1.5 ">
 							<AvatarsStacked task={task} max="10" />
 						</div>
-						<div className="text-base font-normal text-gray-500">
+						<div className="text-100-light dark:text-100-dark text-base font-normal">
 							<div className="flex space-x-2">
 								<MessagesIcon /> <p>3</p>
 							</div>

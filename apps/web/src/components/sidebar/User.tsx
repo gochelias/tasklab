@@ -11,7 +11,7 @@ export const User = ({ href }: any) => {
 			<Link href={href}>
 				<a>
 					<div className="border-300-light dark:border-300-dark flex space-x-4 rounded-2xl border-2 p-4">
-						<div className="relative h-10 w-10 overflow-hidden rounded-full">
+						<div className="ring-300-light dark:ring-300-dark relative h-10 w-10 overflow-hidden rounded-full ring-2">
 							<Image layout="fill" alt="avatar" src={img} />
 						</div>
 						<div className="m-auto flex flex-col leading-none">

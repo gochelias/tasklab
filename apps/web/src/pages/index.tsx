@@ -6,7 +6,7 @@ export default function Web() {
 	return (
 		<Fragment>
 			<div className="flex h-full w-full flex-auto">
-				<div className="flex w-min h-min flex-auto flex-wrap gap-8 p-6 ">
+				<div className="flex h-min w-min flex-auto flex-wrap gap-8 p-6 ">
 					<Tasks />
 				</div>
 				<div className="task-preview-container">
