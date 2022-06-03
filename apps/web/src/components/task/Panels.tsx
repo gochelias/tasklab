@@ -1,10 +1,11 @@
 import { Tab } from '@headlessui/react';
+import { TaskComments } from './TaskComments';
 import { TaskInfo } from './TaskInfo';
 
 export const Panels = () => {
 	const panels = [
 		{ key: 'task', component: <TaskInfo /> },
-		{ key: 'comments', component: 'comments' },
+		{ key: 'comments', component: <TaskComments /> },
 	];
 
 	return (

@@ -51,6 +51,7 @@
 	.task-preview-container {
 		@apply border-300-light 
 		dark:border-300-dark
+		relative
 		h-full
 		w-1/3
 		overflow-hidden
