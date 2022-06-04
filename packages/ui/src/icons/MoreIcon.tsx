@@ -1,11 +1,21 @@
 import { Icon } from './icon.interface';
 
-export const MoreIcon = ({ active = false }: Icon) => {
+export const MoreIcon = ({
+	className,
+	active = false,
+	width,
+	height,
+	size = 24,
+}: Icon) => {
+	const w = width ? width.toString() : size.toString();
+	const h = height ? height.toString() : size.toString();
+
 	return active ? (
 		<svg
-			width="24"
-			height="24"
-			viewBox="0 0 24 24"
+			className={className}
+			width={w}
+			height={h}
+			viewBox={`0 0 ${w} ${h}`}
 			fill="currentColor"
 			xmlns="http://www.w3.org/2000/svg"
 		>
@@ -15,9 +25,10 @@ export const MoreIcon = ({ active = false }: Icon) => {
 		</svg>
 	) : (
 		<svg
-			width="24"
-			height="24"
-			viewBox="0 0 24 24"
+			className={className}
+			width={w}
+			height={h}
+			viewBox={`0 0 ${w} ${h}`}
 			fill="currentColor"
 			xmlns="http://www.w3.org/2000/svg"
 		>

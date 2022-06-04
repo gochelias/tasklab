@@ -95,7 +95,7 @@ export const TaskComments = () => {
 						{comments.length > 0 ? (
 							comments.map((comment: any) => (
 								<Fragment>
-									<div className="mb-8 flex space-x-4 rounded-2xl">
+									<div className="mb-6 flex space-x-4 rounded-2xl">
 										<div className="relative h-10 w-10 overflow-hidden rounded-full">
 											<Image
 												alt="avatar"
