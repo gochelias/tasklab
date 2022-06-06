@@ -34,12 +34,7 @@ export const TaskComments = () => {
 	];
 	return (
 		<>
-			<Scrollbars
-				autoHide
-				thumbSize={200}
-				thumbMinSize={50}
-				renderThumbVertical={customThumb}
-			>
+			<Scrollbars renderThumbVertical={customThumb}>
 				<div className="h-full">
 					{comments.length > 0 ? (
 						comments.map((comment: any) => (

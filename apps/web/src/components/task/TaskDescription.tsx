@@ -1,4 +1,4 @@
-import Scrollbars from 'react-custom-scrollbars';
+import { Scrollbars } from 'react-custom-scrollbars';
 
 export const TaskDescription = (props: any) => {
 	const customThumb = () => (
@@ -7,7 +7,7 @@ export const TaskDescription = (props: any) => {
 
 	return (
 		<>
-			<Scrollbars thumbSize={100} renderThumbVertical={customThumb}>
+			<Scrollbars renderThumbVertical={customThumb} universal={true}>
 				<p className="pr-4 pb-8">{props.description}</p>
 			</Scrollbars>
 		</>
