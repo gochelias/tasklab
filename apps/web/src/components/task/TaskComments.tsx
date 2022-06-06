@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 import { Scrollbars } from 'react-custom-scrollbars';
 
 import { Comment } from './Comment';
+import { NoComments } from './NoComments';
 
 export const TaskComments = () => {
 	const customThumb = () => (
@@ -9,7 +10,7 @@ export const TaskComments = () => {
 	);
 
 	const comments: any[] = [
-		{
+		/* {
 			id: 1,
 			author: {
 				avatar: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YXZhdGFyfGVufDB8fDB8fA%3D%3D&w=1000&q=80',
@@ -30,7 +31,7 @@ export const TaskComments = () => {
 			content:
 				'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
 			createdAt: '12 oct. 2021',
-		},
+		}, */
 	];
 	return (
 		<>
@@ -43,16 +44,19 @@ export const TaskComments = () => {
 							</Fragment>
 						))
 					) : (
-						<div>No Comments</div>
+						<div className="flex h-full select-none items-center justify-center">
+							<NoComments />
+						</div>
 					)}
 				</div>
 			</Scrollbars>
 			<div className="flex h-20 items-end pb-1">
 				<input
-					className="bg-300-light focus:ring-offset-blue-light focus:ring-blue-light/50 placeholder:text-100-light w-full self-end rounded-xl px-4 py-3 transition-transform duration-300 ease-out focus:ring-2 focus:ring-offset-2"
+					className="focus:ring-offset-blue-light focus:ring-blue-light/50 placeholder:text-100-light bg-300-light w-full self-end rounded-xl px-4 py-3 transition-transform duration-300 ease-out focus:ring-2 focus:ring-offset-2"
 					type="text"
 					name=""
 					id=""
+					autoFocus={true}
 					placeholder="Write a comment"
 				/>
 			</div>
