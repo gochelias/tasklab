@@ -39,8 +39,8 @@ export const TaskFullScreen = ({ isOpen, setIsOpen }: any) => {
 										<div className="h-full w-1/4 rounded-2xl bg-white">
 											Some info
 										</div>
-										<div className="dark:border-300-dark h-full max-w-[977.783px] flex-auto overflow-hidden rounded-2xl border-2 border-slate-100">
-											<div className="absolute h-20 border-b-2 border-slate-100 p-4">
+										<div className="dark:border-300-dark relative h-full max-w-[977.783px] flex-auto overflow-hidden rounded-2xl border-2 border-slate-100">
+											<div className="absolute flex h-20 w-full max-w-[977.783px] items-center border-b-2 border-slate-100 p-4">
 												<p className="text-3xl font-semibold text-slate-700">
 													Title Example
 												</p>
