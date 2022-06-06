@@ -1,19 +1,21 @@
 import { Icon } from './icon.interface';
 
 export const DocumentTextIcon = ({
+	className,
 	active = false,
 	width,
 	height,
 	size = 24,
 }: Icon) => {
-	const w = width ? width.toString() : size.toString();
-	const h = height ? height.toString() : size.toString();
+	const w = width ? width : size;
+	const h = height ? height : size;
 
 	return active ? (
 		<svg
+			className={className}
 			width={w}
 			height={h}
-			viewBox={`0 0 ${w} ${h}`}
+			viewBox="0 0 24 24"
 			fill="currentColor"
 			xmlns="http://www.w3.org/2000/svg"
 		>
@@ -22,9 +24,10 @@ export const DocumentTextIcon = ({
 		</svg>
 	) : (
 		<svg
+			className={className}
 			width={w}
 			height={h}
-			viewBox={`0 0 ${w} ${h}`}
+			viewBox="0 0 24 24"
 			fill="currentColor"
 			xmlns="http://www.w3.org/2000/svg"
 		>

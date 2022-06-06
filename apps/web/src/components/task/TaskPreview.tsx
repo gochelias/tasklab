@@ -15,7 +15,7 @@ export const TaskPreview = () => (
 			<div className="flex h-full w-full flex-col">
 				<Tab.Panels className="h-full pt-24">
 					<Tab.Panel className="h-full pt-60">
-						<TaskDescription description="Some description" />
+						<TaskDescription />
 					</Tab.Panel>
 					<Tab.Panel className="h-full pb-20 pt-60">
 						<TaskComments />
