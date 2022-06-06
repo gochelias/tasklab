@@ -1,7 +1,9 @@
-import { MaximizeIcon, MoreIcon, TaskStatus, TaskTabs } from '@tasklab/ui';
-import { Tab } from '@headlessui/react';
+import { TaskStatus, TaskTabs } from '@tasklab/ui';
 import { useState } from 'react';
+import { Tab } from '@headlessui/react';
+
 import { TaskFullScreen } from '../full-screen/TaskFullScreen';
+import { TaskMoreOptions } from './TaskMoreOptions';
 
 type AllStatus = 'NOT_STARTED' | 'IN_PROGRESS' | 'COMPLETED';
 
@@ -12,8 +14,6 @@ interface Status {
 export const TaskNav = ({ taskStatus }: Status) => {
 	const [isOpen, setIsOpen] = useState(false);
 
-	const openFullScreen = () => setIsOpen(true);
-
 	return (
 		<>
 			<div className="mb-10 flex items-center justify-between pr-8">
@@ -22,15 +22,7 @@ export const TaskNav = ({ taskStatus }: Status) => {
 					<Tab.List className="flex space-x-3">
 						<TaskTabs />
 					</Tab.List>
-					<button
-						className="icon-button icon-button-hover"
-						onClick={openFullScreen}
-					>
-						<MaximizeIcon />
-					</button>
-					<button className="icon-button icon-button-hover">
-						<MoreIcon className="rotate-90" />
-					</button>
+					<TaskMoreOptions setIsOpen={setIsOpen} />
 				</div>
 			</div>
 			<TaskFullScreen isOpen={isOpen} setIsOpen={setIsOpen} />

@@ -1,6 +1,7 @@
 import { Icon } from './icon.interface';
 
 export const MaximizeIcon = ({
+	className,
 	active = false,
 	width,
 	height,
@@ -11,6 +12,7 @@ export const MaximizeIcon = ({
 
 	return active ? (
 		<svg
+			className={className}
 			width={w}
 			height={h}
 			viewBox={`0 0 ${w} ${h}`}
@@ -21,6 +23,7 @@ export const MaximizeIcon = ({
 		</svg>
 	) : (
 		<svg
+			className={className}
 			width={w}
 			height={h}
 			viewBox={`0 0 ${w} ${h}`}
