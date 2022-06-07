@@ -14,6 +14,8 @@ export * from './icons/TagIcon';
 export * from './icons/ProfileUserIcon';
 export * from './icons/MoonIcon';
 export * from './icons/SunIcon';
+export * from './icons/EditIcon';
+export * from './icons/TrashIcon';
 
 export * from './components/SidebarButton';
 export * from './components/IconButton';
