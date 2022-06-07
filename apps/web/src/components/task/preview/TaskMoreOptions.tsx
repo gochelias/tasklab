@@ -1,4 +1,4 @@
-import { MaximizeIcon, MoreIcon } from '@tasklab/ui';
+import { EditIcon, MaximizeIcon, MoreIcon, TrashIcon } from '@tasklab/ui';
 import { Menu } from '@headlessui/react';
 
 export const TaskMoreOptions = ({ setIsOpen }: any) => {
@@ -11,6 +11,30 @@ export const TaskMoreOptions = ({ setIsOpen }: any) => {
 					<MoreIcon className="rotate-90" />
 				</Menu.Button>
 				<Menu.Items className="dark:bg-400-dark text-100-light dark:text-100-dark absolute right-0 mt-4 w-64 space-y-2 rounded-3xl p-2 shadow-lg">
+					<Menu.Item>
+						{({ active }: any) => (
+							<button
+								className={`${
+									active && 'bg-400-light'
+								} flex w-full items-center space-x-2 rounded-2xl px-4 py-3`}
+							>
+								<EditIcon className="mr-3" />
+								Edit
+							</button>
+						)}
+					</Menu.Item>
+					<Menu.Item>
+						{({ active }: any) => (
+							<button
+								className={`${
+									active && 'bg-red-light text-white'
+								} flex w-full items-center space-x-2 rounded-2xl px-4 py-3`}
+							>
+								<TrashIcon className="mr-3" />
+								Delete
+							</button>
+						)}
+					</Menu.Item>
 					<Menu.Item>
 						{({ active }: any) => (
 							<button
