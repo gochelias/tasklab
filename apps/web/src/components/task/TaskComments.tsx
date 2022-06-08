@@ -51,7 +51,7 @@ export const TaskComments = () => {
 					)}
 				</div>
 			</Scrollbars>
-			<div className="h-20 pt-6">
+			<div className="flex h-20 items-end">
 				<CreateComment />
 			</div>
 		</>
