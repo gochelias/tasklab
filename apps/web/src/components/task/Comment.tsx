@@ -5,8 +5,8 @@ export const Comment = (props: any) => {
 
 	return (
 		<>
-			<div className="border-400-light hover:bg-400-light mb-3 mr-4 flex select-none space-x-4 rounded-2xl px-4 py-3">
-				<div className="relative h-10 w-10 overflow-hidden rounded-full">
+			<div className="mb-3 mr-4 flex space-x-4 rounded-3xl px-4 py-4">
+				<div className="relative h-12 w-12 overflow-hidden rounded-full">
 					<Image
 						alt="avatar"
 						layout="fill"
@@ -14,16 +14,18 @@ export const Comment = (props: any) => {
 					/>
 				</div>
 				<div className="space-y-1">
-					<p className="text-lg font-semibold">
-						{`${comment.author.name}`}
-						<span className="text-100-light text-base font-normal">
-							{` ${comment.author.username}`}
-						</span>
-						<span className="text-100-light text-base font-normal">
-							{` · ${comment.createdAt}`}
-						</span>
-					</p>
-					<p className="flex w-full max-w-[626.017px] flex-row text-base">
+					<div className="flex items-center space-x-2">
+						<p className="text-lg font-semibold leading-none">
+							{`${comment.author.name}`}
+						</p>
+						<p className="bg-blue-light/20 text-blue-light w-max rounded-md p-1 text-xs font-medium leading-none">
+							{`Role`}
+						</p>
+						<p className="text-200-light text-base font-normal">
+							{`${comment.createdAt}`}
+						</p>
+					</div>
+					<p className="flex w-full max-w-[626.017px] flex-row">
 						{`${comment.content}`}
 					</p>
 				</div>
