@@ -5,7 +5,7 @@ export const Comment = (props: any) => {
 
 	return (
 		<>
-			<div className="mb-6 flex space-x-4 rounded-2xl">
+			<div className="border-400-light hover:bg-400-light mb-3 mr-4 flex select-none space-x-4 rounded-2xl px-4 py-3">
 				<div className="relative h-10 w-10 overflow-hidden rounded-full">
 					<Image
 						alt="avatar"
@@ -23,7 +23,7 @@ export const Comment = (props: any) => {
 							{` · ${comment.createdAt}`}
 						</span>
 					</p>
-					<p className="bg-300-light flex w-full max-w-[626.017px] flex-row rounded-xl rounded-tl-none px-3 py-2 text-base">
+					<p className="flex w-full max-w-[626.017px] flex-row text-base">
 						{`${comment.content}`}
 					</p>
 				</div>
