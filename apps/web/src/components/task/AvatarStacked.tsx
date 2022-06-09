@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import Image from 'next/image';
 
-export const AvatarsStacked = ({ task, max, isPreview = false }: any) => {
+export const AvatarsStacked = ({ assigned, max, isPreview = false }: any) => {
 	const sizeX1 = {
 		image: 'w-6 h-6',
 		container: 'w-6 h-6',
@@ -15,30 +15,38 @@ export const AvatarsStacked = ({ task, max, isPreview = false }: any) => {
 
 	const avatar = isPreview ? sizeX2 : sizeX1;
 
-	return task.assignedTo.length > max ? (
+	return assigned.length > max ? (
 		<>
-			{task.assignedTo.slice(-max).map((url: string) => (
-				<Fragment key={task.id}>
+			{assigned.slice(-max).map((user: any) => (
+				<Fragment key={user.id}>
 					<div
 						className={`${avatar.image} relative overflow-hidden rounded-full ring-2 ring-white dark:ring-black`}
 					>
-						<Image alt="avatar" layout="fill" src={url} />
+						<Image
+							alt="avatar"
+							layout="fill"
+							src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW4lMjBmYWNlfGVufDB8fDB8fA%3D%3D&w=1000&q=8"
+						/>
 					</div>
 				</Fragment>
 			))}
 			<div
 				className={`${avatar.container} ${avatar.font} bg-300-light dark:bg-300-dark dark:text-100-dark text-100-light relative flex items-center justify-center rounded-full border-2 border-white dark:border-black`}
 			>
-				+{task.assignedTo.length - max}
+				+1{/* {assigned.assignedTo.length - max} */}
 			</div>
 		</>
 	) : (
-		task.assignedTo.map((a: any) => (
-			<Fragment key={task.id}>
+		assigned.map((user: any) => (
+			<Fragment key={user.id}>
 				<div
 					className={`${avatar.container} relative overflow-hidden rounded-full ring-2 ring-white dark:ring-black`}
 				>
-					<Image alt="avatar" layout="fill" src={a} />
+					<Image
+						alt="avatar"
+						layout="fill"
+						src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW4lMjBmYWNlfGVufDB8fDB8fA%3D%3D&w=1000&q=8"
+					/>
 				</div>
 			</Fragment>
 		))

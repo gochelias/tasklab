@@ -13,7 +13,10 @@ export const TaskHeader = () => {
 	const task = {
 		id: '1',
 		title: 'Title example',
-		assignedTo: [img, img, img, img, img],
+		assignedTo: [
+			{ id: '1', avatar: img },
+			{ id: '2', avatar: img },
+		],
 	};
 
 	return (
@@ -40,7 +43,11 @@ export const TaskHeader = () => {
 				<div className="text-100-light dark:text-100-dark flex select-none items-center space-x-5">
 					<ProfileUserIcon />
 					<div className="flex items-center -space-x-2 ">
-						<AvatarsStacked task={task} max="20" isPreview={true} />
+						<AvatarsStacked
+							assigned={task.assignedTo}
+							max={20}
+							isPreview={true}
+						/>
 					</div>
 				</div>
 				<div className="my-4 flex items-center space-x-5">
