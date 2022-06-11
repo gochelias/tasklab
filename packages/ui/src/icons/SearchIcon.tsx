@@ -1,6 +1,7 @@
 import { Icon } from './icon.interface';
 
 export const SearchIcon = ({
+	className,
 	active = false,
 	width,
 	height,
@@ -11,6 +12,7 @@ export const SearchIcon = ({
 
 	return active ? (
 		<svg
+			className={className}
 			width={w}
 			height={h}
 			viewBox={`0 0 ${w} ${h}`}
@@ -22,6 +24,7 @@ export const SearchIcon = ({
 		</svg>
 	) : (
 		<svg
+			className={className}
 			width={w}
 			height={h}
 			viewBox={`0 0 ${w} ${h}`}
