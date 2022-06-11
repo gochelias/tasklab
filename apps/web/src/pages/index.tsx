@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { TaskPreview } from '../components/task/TaskPreview';
+import { TaskPreview } from '../components/tasks/TaskPreview';
 /* import { Tasks } from '../components/task/Tasks'; */
 import { Topbar } from '../components/topbar/Topbar';
 

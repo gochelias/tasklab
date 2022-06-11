@@ -1,7 +1,7 @@
 import { Menu } from '@headlessui/react';
 import { AddSquareIcon } from '@tasklab/ui';
 import { useState } from 'react';
-import { ModalCreateTask } from '../task/create-task/ModalCreateTask';
+import { ModalCreateTask } from '../tasks/create-task/ModalCreateTask';
 import { ItemCreateNew } from './ItemCreateNew';
 
 export const CreateNew = () => {
