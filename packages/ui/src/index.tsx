@@ -17,6 +17,7 @@ export * from './icons/SunIcon';
 export * from './icons/EditIcon';
 export * from './icons/TrashIcon';
 export * from './icons/SendIcon';
+export * from './icons/HomeIcon';
 
 export * from './components/SidebarButton';
 export * from './components/IconButton';

@@ -1,4 +1,4 @@
-import { Dashboard } from './Dashboard';
+import { Home } from './Home';
 import { Timeline } from './Timeline';
 import { Settings } from './Settings';
 import { User } from './User';
@@ -8,7 +8,7 @@ export const Sidebar = () => (
 		<div>
 			<div className=" h-20 space-y-4 p-4">Title</div>
 			<div className="mt-20 space-y-4 px-4">
-				<Dashboard href="/" />
+				<Home href="/" />
 				<Timeline href="/timeline" />
 			</div>
 		</div>
