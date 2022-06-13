@@ -1,4 +1,9 @@
-import { MessagesIcon, MoreIcon } from '@tasklab/ui';
+import {
+	CalendarIcon,
+	MessagesIcon,
+	ProgressBar,
+	TaskStatus,
+} from '@tasklab/ui';
 import { Fragment } from 'react';
 import { AvatarsStacked } from './AvatarStacked';
 
@@ -35,27 +40,38 @@ export const Tasks = () => {
 		<>
 			{tasks.map((task: Task) => (
 				<Fragment key={task.id}>
-					<div className="dark:border-300-dark border-300-light flex h-48 w-80 flex-col justify-between rounded-2xl border-2 p-4">
-						<div className="flex flex-col space-y-4">
-							<div className="flex items-center justify-between">
-								<div className="bg-blue-10 rounded-lg px-2 py-1">
-									<p className="text-blue-light dark:text-blue-dark text-sm opacity-100">
-										In Progress
-									</p>
-								</div>
-								<div>
-									<MoreIcon />
-								</div>
-							</div>
-							<p className="font-semibold">{task.title}</p>
+					<div className="dark:border-300-dark border-300-light flex h-min flex-col rounded-2xl border-4 p-4">
+						<div className="flex items-center justify-between">
+							<TaskStatus taskStatus="IN_PROGRESS" />
 						</div>
-						<div className="space-y-3">
-							<div className="flex -space-x-1.5 ">
-								<AvatarsStacked
-									assigned={task.assignedTo}
-									max={10}
-								/>
+						<div className="my-3">
+							<p className="text-100-light">Title Project</p>
+							<p className="text-xl font-semibold">
+								The Bear Collective Project
+							</p>
+						</div>
+						<div className="flex -space-x-1.5 ">
+							<AvatarsStacked
+								assigned={task.assignedTo}
+								max={10}
+							/>
+						</div>
+						<div className="mt-4 mb-6">
+							<div className="mb-1 flex items-center justify-between">
+								<p className="dark:text-200-dark text-100-light text-base">
+									Progress
+								</p>
+								<p className="dark:text-100-dark text-sm text-slate-600">
+									45%
+								</p>
 							</div>
+							<ProgressBar value={45} />
+						</div>
+						<div className="flex items-center justify-between">
+							<p className="text-100-light flex text-base">
+								<CalendarIcon className="mr-3" />
+								Jan 24 10:30am
+							</p>
 							<div className="text-100-light dark:text-100-dark text-base font-normal">
 								<div className="flex space-x-2">
 									<MessagesIcon /> <p>3</p>

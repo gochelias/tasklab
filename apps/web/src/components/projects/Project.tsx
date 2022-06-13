@@ -1,4 +1,5 @@
 import { AvatarsStacked } from '../tasks/AvatarStacked';
+import { Tasks } from '../tasks/Tasks';
 
 export const Project = () => {
 	const img =
@@ -11,7 +12,7 @@ export const Project = () => {
 
 	return (
 		<>
-			<div className="h-full px-16">
+			<div className="relative h-full overflow-auto px-10">
 				<p className="py-4 text-[#A0AEC0]">
 					Projects {'>'} Project Title
 				</p>
@@ -42,6 +43,9 @@ export const Project = () => {
 							View
 						</button>
 					</div>
+				</div>
+				<div className="mt-10 grid grid-flow-row auto-rows-min grid-cols-[repeat(auto-fill,minmax(340px,1fr))] gap-10">
+					<Tasks />
 				</div>
 			</div>
 		</>
