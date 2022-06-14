@@ -1,4 +1,6 @@
 import { CategoryIcon } from '@tasklab/ui';
+import Image from 'next/image';
+
 import { AvatarsStacked } from '../tasks/AvatarStacked';
 import { Tasks } from '../tasks/Tasks';
 
@@ -11,11 +13,19 @@ export const Project = () => {
 		{ id: '2', avatar: img },
 	];
 
+	const projectImg = '';
+
 	return (
 		<>
 			<div className="relative h-full overflow-auto px-10">
-				<div className="flex items-center space-x-8 py-4">
-					<div className="bg-300-light h-32 w-32 rounded-2xl"></div>
+				<div className="flex items-center py-4">
+					{projectImg ? (
+						<div className="bg-300-light relative mr-8 h-28 w-28 overflow-hidden rounded-2xl">
+							<Image alt="img" layout="fill" src={projectImg} />
+						</div>
+					) : (
+						''
+					)}
 					<div>
 						<p className="text-6xl font-semibold">Project Title</p>
 						<div className="flex space-x-10 pt-4 text-[#A0AEC0]">
