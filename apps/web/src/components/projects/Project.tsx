@@ -46,7 +46,7 @@ export const Project = () => {
 						</button>
 					</div>
 				</div>
-				<div className="mt-10 grid grid-flow-row auto-rows-min grid-cols-[repeat(auto-fill,minmax(340px,1fr))] gap-10">
+				<div className="mt-10 grid grid-flow-row auto-rows-min grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-10">
 					<Tasks />
 				</div>
 			</div>
