@@ -13,19 +13,21 @@ export const Project = () => {
 	return (
 		<>
 			<div className="relative h-full overflow-auto px-10">
-				<p className="py-4 text-[#A0AEC0]">
-					Projects {'>'} Project Title
-				</p>
-				<p className="text-6xl font-semibold">Project Title</p>
-				<div className="flex space-x-10 py-4 text-[#A0AEC0]">
-					<p>Private</p>
-					<a
-						href=""
-						className="hover:underline hover:decoration-blue-500 hover:decoration-2"
-					>
-						link
-					</a>
-					<p>total tasks</p>
+				<div className="flex items-center space-x-8 py-4">
+					<div className="bg-300-light h-32 w-32 rounded-2xl"></div>
+					<div>
+						<p className="text-6xl font-semibold">Project Title</p>
+						<div className="flex space-x-10 pt-4 text-[#A0AEC0]">
+							<p>Private</p>
+							<a
+								href=""
+								className="hover:underline hover:decoration-blue-500 hover:decoration-2"
+							>
+								link
+							</a>
+							<p>total tasks</p>
+						</div>
+					</div>
 				</div>
 				<div className="flex items-center justify-between">
 					<div className="flex items-center -space-x-2">

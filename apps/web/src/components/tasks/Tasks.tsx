@@ -47,7 +47,7 @@ export const Tasks = () => {
 						<div className="my-3">
 							<p className="text-100-light">Title Project</p>
 							<p className="text-xl font-semibold">
-								The Bear Collective Project
+								{task.title}
 							</p>
 						</div>
 						<div className="flex -space-x-1.5 ">
