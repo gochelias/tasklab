@@ -1,8 +1,9 @@
 import { Icon } from './icon.interface';
 
-export const CategoryIcon = ({ active = false }: Icon) => {
+export const CategoryIcon = ({ className, active = false }: Icon) => {
 	return active ? (
 		<svg
+			className={className}
 			width="24"
 			height="24"
 			viewBox="0 0 24 24"
@@ -16,6 +17,7 @@ export const CategoryIcon = ({ active = false }: Icon) => {
 		</svg>
 	) : (
 		<svg
+			className={className}
 			width="24"
 			height="24"
 			viewBox="0 0 24 24"

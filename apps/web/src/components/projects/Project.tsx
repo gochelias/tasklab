@@ -1,3 +1,4 @@
+import { CategoryIcon } from '@tasklab/ui';
 import { AvatarsStacked } from '../tasks/AvatarStacked';
 import { Tasks } from '../tasks/Tasks';
 
@@ -37,11 +38,12 @@ export const Project = () => {
 							isPreview={true}
 						/>
 					</div>
-					<div className="space-x-4">
+					<div className="flex space-x-4">
 						<button className="rounded-2xl border-2 border-[#EDF2F7] py-3 px-4 text-[#A0AEC0]">
 							Filter
 						</button>
-						<button className="rounded-2xl border-2 border-[#EDF2F7] py-3 px-4 text-[#A0AEC0]">
+						<button className="flex items-center rounded-2xl border-2 border-[#EDF2F7] py-3 px-4 text-[#A0AEC0]">
+							<CategoryIcon className="mr-3" />
 							View
 						</button>
 					</div>
