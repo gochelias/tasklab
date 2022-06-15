@@ -1,4 +1,4 @@
-import { CalendarIcon, CategoryIcon } from '@tasklab/ui';
+import { CalendarIcon, CategoryIcon, RowIcon } from '@tasklab/ui';
 import { Menu } from '@headlessui/react';
 
 export const View = () => (
@@ -13,7 +13,7 @@ export const View = () => (
 					{({ active }: any) => (
 						<button
 							className={`${
-								active && 'bg-400-light'
+								active && 'bg-slate-100'
 							} flex w-full items-center space-x-2 rounded-2xl px-4 py-3`}
 						>
 							<CategoryIcon className="mr-3" />
@@ -28,6 +28,7 @@ export const View = () => (
 								active && 'bg-400-light'
 							} flex w-full items-center space-x-2 rounded-2xl px-4 py-3`}
 						>
+							<RowIcon className="mr-3" />
 							Rows
 						</button>
 					)}
