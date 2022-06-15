@@ -1,8 +1,8 @@
-import { CategoryIcon } from '@tasklab/ui';
 import Image from 'next/image';
 
 import { AvatarsStacked } from '../tasks/AvatarStacked';
 import { Tasks } from '../tasks/Tasks';
+import { View } from './View';
 
 export const Project = () => {
 	const img =
@@ -52,10 +52,7 @@ export const Project = () => {
 						<button className="rounded-2xl border-2 border-[#EDF2F7] py-3 px-4 text-[#A0AEC0]">
 							Filter
 						</button>
-						<button className="flex items-center rounded-2xl border-2 border-[#EDF2F7] py-3 px-4 text-[#A0AEC0]">
-							<CategoryIcon className="mr-3" />
-							View
-						</button>
+						<View />
 					</div>
 				</div>
 				<div className="mt-10 grid grid-flow-row auto-rows-min grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-10">

@@ -5,6 +5,7 @@ import {
 	TaskStatus,
 } from '@tasklab/ui';
 import { Fragment } from 'react';
+
 import { AvatarsStacked } from './AvatarStacked';
 
 export const Tasks = () => {
@@ -20,30 +21,6 @@ export const Tasks = () => {
 	const tasks = [
 		{
 			id: '1',
-			title: 'Title example',
-			assignedTo: [
-				{ id: '1', avatar: img },
-				{ id: '2', avatar: img },
-			],
-		},
-		{
-			id: '2',
-			title: 'Title example',
-			assignedTo: [
-				{ id: '1', avatar: img },
-				{ id: '2', avatar: img },
-			],
-		},
-		{
-			id: '2',
-			title: 'Title example',
-			assignedTo: [
-				{ id: '1', avatar: img },
-				{ id: '2', avatar: img },
-			],
-		},
-		{
-			id: '2',
 			title: 'Title example',
 			assignedTo: [
 				{ id: '1', avatar: img },
