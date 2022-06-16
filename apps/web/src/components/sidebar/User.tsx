@@ -10,13 +10,13 @@ export const User = ({ href }: any) => {
 		<Fragment>
 			<Link href={href}>
 				<a>
-					<div className="border-300-light dark:border-300-dark flex space-x-4 rounded-2xl border-2 p-4">
-						<div className="ring-300-light dark:ring-300-dark relative h-10 w-10 overflow-hidden rounded-full ring-2">
+					<div className="flex space-x-4 rounded-2xl border-2 border-slate-100 p-4 dark:border-slate-700">
+						<div className="relative h-10 w-10 overflow-hidden rounded-full ring-2 ring-slate-100 dark:ring-slate-700">
 							<Image layout="fill" alt="avatar" src={img} />
 						</div>
 						<div className="m-auto flex flex-col leading-none">
 							<p className="font-semibold">Natalie Jackson</p>
-							<p className="text-100-light dark:text-100-dark text-base leading-none">
+							<p className="text-100-light text-base leading-none dark:text-slate-500">
 								@nateson
 							</p>
 						</div>

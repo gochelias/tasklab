@@ -15,7 +15,7 @@
 		transition-all
 		duration-200
 		ease-linear
-		dark:bg-[#171923]
+		dark:bg-slate-900
 		dark:text-white;
 	}
 }

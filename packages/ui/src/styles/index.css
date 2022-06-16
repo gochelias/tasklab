@@ -8,44 +8,43 @@
 	}
 
 	.sidebar-button {
-		@apply text-100-light 
-		dark:text-100-dark 
-		flex 
-		w-full 
+		@apply flex
+		w-full
 		space-x-4 
 		rounded-2xl 
 		px-4 
 		py-3 
-		leading-none;
+		leading-none 
+		text-slate-400;
 	}
 
 	.sidebar-button-hover {
-		@apply hover:bg-400-light 
-		dark:hover:bg-400-dark
-		transition-all 
-		duration-75 ease-linear;
+		@apply transition-all
+		duration-75
+		ease-linear 
+		hover:bg-slate-100 
+		dark:hover:bg-slate-700;
 	}
 
 	.sidebar-button-active {
-		@apply bg-blue-light 
-		dark:bg-blue-dark
-		text-white 
+		@apply bg-blue-500
+		text-white
+		dark:bg-blue-500 
 		dark:text-white;
 	}
 
 	.icon-button {
-		@apply text-100-light
-		dark:text-100-dark
-		rounded-2xl
-		p-3;
+		@apply rounded-2xl
+		p-3
+		text-slate-400;
 	}
 
 	.icon-button-hover {
-		@apply hover:bg-400-light 
-		dark:hover:bg-400-dark
-		transition-all
+		@apply transition-all 
 		duration-75
-		ease-linear;
+		ease-linear
+		hover:bg-slate-100
+		dark:hover:bg-slate-700;
 	}
 
 	.task-preview-container {
@@ -96,37 +95,38 @@
 
 	.create-new {
 		@apply bg-blue-light
-		dark:bg-blue-dark 
-		shadow-blue-dark/40
+		dark:shadow-slate-dark
 		m-auto 
 		flex
-		items-center
+		items-center 
 		rounded-2xl
-		px-4 
+		px-4
 		py-3
-		text-center
-		leading-none 
-		text-white 
-		shadow-lg
+		text-center 
+		leading-none
+		text-white
+		shadow-lg 
+		shadow-slate-300 
 		transition-shadow
 		duration-75
-		ease-in 
-		active:shadow-none;
+		ease-in
+		active:shadow-none 
+		dark:bg-blue-500;
 	}
 
 	.items-create-new {
-		@apply dark:bg-400-dark
-		text-100-light 
-		dark:text-100-dark
-		absolute 
+		@apply dark:shadow-slate-dark 
+		absolute
 		right-0 
 		mt-4 
-		w-64
+		w-56 
 		space-y-2
-		rounded-3xl 
-		bg-white
+		rounded-3xl
+		bg-white 
 		p-2
-		shadow-lg;
+		text-slate-400
+		shadow-lg
+		dark:bg-slate-800;
 	}
 
 	.task-status {

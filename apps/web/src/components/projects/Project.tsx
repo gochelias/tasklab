@@ -18,10 +18,10 @@ export const Project = () => {
 	return (
 		<>
 			<div className="relative h-full overflow-auto">
-				<div className="absolute w-full px-14">
+				<div className="absolute w-full px-10">
 					<div className="flex items-center py-4">
 						{projectImg ? (
-							<div className="bg-300-light relative mr-8 h-28 w-28 overflow-hidden rounded-2xl">
+							<div className="relative mr-8 h-28 w-28 overflow-hidden rounded-2xl bg-slate-100 dark:bg-slate-700">
 								<Image
 									alt="img"
 									layout="fill"
@@ -32,10 +32,10 @@ export const Project = () => {
 							''
 						)}
 						<div>
-							<p className="text-6xl font-semibold">
+							<p className="text-6xl font-semibold text-slate-700 dark:text-slate-200">
 								Project Title
 							</p>
-							<div className="flex space-x-10 pt-4 text-[#A0AEC0]">
+							<div className="flex space-x-10 pt-4 text-slate-400">
 								<p>Private</p>
 								<a
 									href=""
@@ -56,7 +56,7 @@ export const Project = () => {
 							/>
 						</div>
 						<div className="flex space-x-4">
-							<button className="rounded-2xl border-2 border-slate-100 py-3 px-4 text-[#A0AEC0]">
+							<button className="rounded-2xl border-2 border-slate-100 py-3 px-4 text-slate-400 dark:border-slate-700">
 								Filter
 							</button>
 							<View />
@@ -64,8 +64,8 @@ export const Project = () => {
 					</div>
 				</div>
 				<div className="h-full pt-48">
-					<div className="h-full p-4">
-						<div className="mb-4 grid h-full grid-flow-row auto-rows-min grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-4 rounded-3xl">
+					<div className="h-full py-6 px-10">
+						<div className="mb-4 grid h-full grid-flow-row auto-rows-min grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-8 rounded-3xl">
 							<Tasks />
 						</div>
 					</div>

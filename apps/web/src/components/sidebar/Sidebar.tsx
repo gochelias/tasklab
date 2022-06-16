@@ -5,7 +5,7 @@ import { User } from './User';
 import { Workspace } from './Workspace';
 
 export const Sidebar = () => (
-	<div className="border-300-light dark:border-300-dark flex h-screen select-none flex-col justify-between border-r-2">
+	<div className="flex h-screen select-none flex-col justify-between border-r-2 border-slate-100 dark:border-slate-700">
 		<div>
 			<div>
 				<Workspace />
