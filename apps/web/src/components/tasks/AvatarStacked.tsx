@@ -8,8 +8,8 @@ export const AvatarsStacked = ({ assigned, max, isPreview = false }: any) => {
 		font: 'text-xs font-medium',
 	};
 	const sizeX2 = {
-		image: 'w-8 h-8',
-		container: 'w-9 h-9',
+		image: 'w-10 h-10',
+		container: 'w-11 h-11',
 		font: 'text-base font-normal',
 	};
 
@@ -20,7 +20,7 @@ export const AvatarsStacked = ({ assigned, max, isPreview = false }: any) => {
 			{assigned.slice(-max).map((user: any) => (
 				<Fragment key={user.id}>
 					<div
-						className={`${avatar.image} relative overflow-hidden rounded-full ring-2 ring-white dark:ring-black`}
+						className={`${avatar.image} relative overflow-hidden rounded-full ring-2 ring-white dark:ring-slate-900`}
 					>
 						<Image
 							alt="avatar"
@@ -31,7 +31,7 @@ export const AvatarsStacked = ({ assigned, max, isPreview = false }: any) => {
 				</Fragment>
 			))}
 			<div
-				className={`${avatar.container} ${avatar.font} bg-300-light dark:bg-300-dark dark:text-100-dark text-100-light relative flex items-center justify-center rounded-full border-2 border-white dark:border-black`}
+				className={`${avatar.container} ${avatar.font} relative flex items-center justify-center rounded-full border-2 border-white bg-slate-100 text-slate-500 dark:border-slate-900 dark:bg-slate-700 dark:text-slate-400`}
 			>
 				+1{/* {assigned.assignedTo.length - max} */}
 			</div>
@@ -40,7 +40,7 @@ export const AvatarsStacked = ({ assigned, max, isPreview = false }: any) => {
 		assigned.map((user: any) => (
 			<Fragment key={user.id}>
 				<div
-					className={`${avatar.container} relative overflow-hidden rounded-full ring-2 ring-white dark:ring-black`}
+					className={`${avatar.image} relative overflow-hidden rounded-full ring-2 ring-white dark:ring-slate-900`}
 				>
 					<Image
 						alt="avatar"

@@ -8,10 +8,10 @@ export const CreateComment = () => {
 	return (
 		<>
 			<Formik initialValues={{ comment: '' }} onSubmit={handlerOnSubmit}>
-				<Form className="bg-300-light flex w-full overflow-hidden rounded-3xl p-2">
+				<Form className="flex w-full overflow-hidden rounded-3xl bg-slate-100 p-2 dark:bg-slate-700">
 					<div className="flex-auto">
 						<Field
-							className="placeholder:text-200-light flex h-12 w-full bg-transparent px-4 text-lg"
+							className="flex h-12 w-full bg-transparent px-4 text-lg text-slate-700 placeholder:text-slate-400 dark:text-slate-200 dark:placeholder:text-slate-500"
 							id="comment"
 							name="comment"
 							type="text"
@@ -20,7 +20,7 @@ export const CreateComment = () => {
 					</div>
 					<button
 						type="submit"
-						className="bg-200-light flex h-12 w-12 items-center justify-center rounded-2xl text-white"
+						className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-300 text-slate-600 dark:bg-slate-800 dark:text-slate-200"
 					>
 						<SendIcon active={true} />
 					</button>

@@ -21,37 +21,39 @@ export const TaskHeader = () => {
 
 	return (
 		<>
-			<h1 className="text-3xl font-semibold">Title Example</h1>
-			<div className="my-8 space-y-5">
-				<div className="text-100-light dark:text-100-dark flex select-none items-center space-x-5">
+			<p className="text-3xl font-semibold text-slate-700 dark:text-slate-200">
+				Title Example
+			</p>
+			<div className="my-8 space-y-4">
+				<div className="flex select-none items-center space-x-5 text-slate-400 dark:text-slate-500">
 					<CalendarIcon />
 					<p>
 						Started{' '}
 						<span
 							title={startsAtDate}
-							className="decoration-200-light dark:decoration-200-dark text-black underline dark:text-white"
+							className="dark:decoration-200-dark text-slate-700 underline decoration-slate-300 dark:text-slate-200"
 						>
 							{startsAt}
 						</span>{' '}
 						and ends{' '}
 						<span
 							title={endsAtDate}
-							className="decoration-200-light dark:decoration-200-dark text-black underline dark:text-white"
+							className="dark:decoration-200-dark text-slate-700 underline decoration-slate-300 dark:text-slate-200"
 						>{`${endsAt}`}</span>
 					</p>
 				</div>
-				<div className="text-100-light dark:text-100-dark flex select-none items-center space-x-5">
+				<div className="flex select-none items-center space-x-5 text-slate-400 dark:text-slate-500">
 					<ProfileUserIcon />
-					<div className="flex items-center -space-x-2 ">
+					<div className="flex items-center -space-x-2.5 ">
 						<AvatarsStacked
 							assigned={task.assignedTo}
-							max={20}
+							max={3}
 							isPreview={true}
 						/>
 					</div>
 				</div>
 				<div className="my-4 flex items-center space-x-5">
-					<TagIcon className="text-100-light dark:text-100-dark" />
+					<TagIcon className="text-slate-400 dark:text-slate-500" />
 					<div className="flex space-x-2 text-sm ">
 						<button className="tag">
 							<Tag label="Style Guide" emoji="🚀" />
