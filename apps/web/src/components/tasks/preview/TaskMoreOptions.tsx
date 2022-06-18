@@ -8,7 +8,7 @@ export const TaskMoreOptions = ({ setIsOpen }: any) => {
 		<>
 			<Menu as="div" className="relative z-10">
 				<Menu.Button className="icon-button icon-button-hover">
-					<MoreIcon className="rotate-90" />
+					<MoreIcon className="rotate-90" active={true} />
 				</Menu.Button>
 				<Menu.Items className="absolute right-0 mt-4 w-64 space-y-2 rounded-3xl bg-white p-2 text-slate-500 shadow-lg dark:bg-slate-800 dark:text-slate-400">
 					<Menu.Item>
