@@ -19,7 +19,7 @@ const workspaces = [
 export const Workspace = () => (
 	<>
 		<Menu as="div" className="relative z-50">
-			<Menu.Button className=" flex h-20 w-full items-center px-4 font-semibold">
+			<Menu.Button className=" flex h-20 w-full items-center px-4 font-semibold hover:bg-slate-50 dark:hover:bg-slate-800">
 				<div className="bg relative mr-3 h-10 w-10 rounded-full bg-slate-200 dark:bg-slate-600"></div>
 				<p className="h-7 w-48 overflow-hidden truncate text-left text-slate-700 dark:text-slate-200">
 					Workspace Name
