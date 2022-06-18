@@ -4,11 +4,11 @@ import { Menu } from '@headlessui/react';
 export const View = () => (
 	<>
 		<Menu as="div" className="relative inline-block text-left">
-			<Menu.Button className="active:bg-400-light flex items-center rounded-2xl border-2 border-slate-100 py-3 px-4 text-slate-400 dark:border-slate-700 dark:active:bg-slate-700">
+			<Menu.Button className="flex items-center rounded-2xl border-2 border-slate-100 py-3 px-4 text-slate-500 active:bg-slate-100 dark:border-slate-700 dark:active:bg-slate-700">
 				<CategoryIcon className="mr-3" />
 				View
 			</Menu.Button>
-			<Menu.Items className="dark:shadow-slate-dark absolute right-0 mt-2 w-44 rounded-3xl p-2 text-slate-400 shadow-lg shadow-slate-200 dark:bg-slate-800">
+			<Menu.Items className="dark:shadow-slate-dark absolute right-0 mt-2 w-44 rounded-3xl p-2 text-slate-500 shadow-lg shadow-slate-200 dark:bg-slate-800">
 				<Menu.Item>
 					{({ active }: any) => (
 						<button

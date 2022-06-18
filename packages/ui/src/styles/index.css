@@ -72,7 +72,7 @@
 		after:w-3
 		after:rounded-full
 		after:border-2 
-		after:border-[#007AFF];
+		after:border-blue-500;
 	}
 
 	.tag {
@@ -128,9 +128,10 @@
 		rounded-3xl
 		bg-white 
 		p-2
-		text-slate-400
+		text-slate-500
 		shadow-lg
-		dark:bg-slate-800;
+		dark:bg-slate-800
+		dark:text-slate-400;
 	}
 
 	.task-status {

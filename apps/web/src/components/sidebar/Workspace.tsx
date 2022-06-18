@@ -20,8 +20,8 @@ export const Workspace = () => (
 	<>
 		<Menu as="div" className="relative z-50">
 			<Menu.Button className=" flex h-20 w-full items-center px-4 font-semibold">
-				<div className="bg relative mr-3 h-10 w-10 rounded-full bg-slate-200"></div>
-				<p className="h-7 w-48 overflow-hidden truncate text-left">
+				<div className="bg relative mr-3 h-10 w-10 rounded-full bg-slate-200 dark:bg-slate-600"></div>
+				<p className="h-7 w-48 overflow-hidden truncate text-left text-slate-700 dark:text-slate-200">
 					Workspace Name
 				</p>
 			</Menu.Button>
@@ -49,7 +49,7 @@ export const Workspace = () => (
 						<button
 							className={`${
 								active && 'bg-slate-100 dark:bg-slate-700'
-							} flex w-full items-center justify-center space-x-2 rounded-2xl border-2 border-slate-100 px-4 py-3 text-blue-500 dark:border-slate-700`}
+							} flex h-16 w-full items-center justify-center space-x-2 rounded-2xl border-2 border-slate-100 px-4 py-3 text-blue-500 dark:border-slate-700`}
 						>
 							Create workspace
 						</button>
