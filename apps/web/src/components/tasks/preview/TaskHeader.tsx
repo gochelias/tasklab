@@ -31,14 +31,14 @@ export const TaskHeader = () => {
 						Started{' '}
 						<span
 							title={startsAtDate}
-							className="dark:decoration-200-dark text-slate-700 underline decoration-slate-300 dark:text-slate-200"
+							className="text-slate-700 underline decoration-slate-300 dark:text-slate-200 dark:decoration-slate-600"
 						>
 							{startsAt}
 						</span>{' '}
 						and ends{' '}
 						<span
 							title={endsAtDate}
-							className="dark:decoration-200-dark text-slate-700 underline decoration-slate-300 dark:text-slate-200"
+							className="text-slate-700 underline decoration-slate-300 dark:text-slate-200 dark:decoration-slate-600"
 						>{`${endsAt}`}</span>
 					</p>
 				</div>
