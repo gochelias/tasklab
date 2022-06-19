@@ -41,7 +41,7 @@ export const Tasks = () => {
 		<>
 			{tasks.map((task: Task) => (
 				<Fragment key={task.id}>
-					<div className="flex h-min flex-col rounded-2xl border-2 border-slate-100 p-4 outline-4 outline-blue-500 transition-all duration-75 ease-out hover:outline hover:outline-offset-4 dark:border-slate-700">
+					<div className="flex h-min flex-col rounded-2xl border-2 border-slate-100 p-4 outline-4 outline-slate-300 transition-all duration-75 ease-out hover:bg-slate-50 hover:outline hover:outline-offset-4 dark:border-slate-700 dark:outline-slate-600 dark:hover:bg-slate-800 ">
 						<div className="flex items-center justify-between">
 							<TaskStatus taskStatus="IN_PROGRESS" />
 						</div>
