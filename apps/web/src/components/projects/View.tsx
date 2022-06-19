@@ -8,7 +8,7 @@ export const View = () => (
 				<CategoryIcon className="mr-3" />
 				View
 			</Menu.Button>
-			<Menu.Items className="dark:shadow-slate-dark absolute right-0 mt-2 w-44 rounded-3xl p-2 text-slate-400 shadow-lg shadow-slate-200 dark:bg-slate-800">
+			<Menu.Items className="dark:shadow-slate-dark absolute right-0 mt-2 w-44 rounded-3xl p-2 text-slate-500 shadow-lg shadow-slate-200 dark:bg-slate-800 dark:text-slate-400">
 				<Menu.Item>
 					{({ active }: any) => (
 						<button
@@ -25,7 +25,7 @@ export const View = () => (
 					{({ active }: any) => (
 						<button
 							className={`${
-								active && 'bg-400-light dark:bg-slate-700'
+								active && 'bg-slate-100 dark:bg-slate-700'
 							} flex w-full items-center space-x-2 rounded-2xl px-4 py-3`}
 						>
 							<RowIcon className="mr-3" />
@@ -37,7 +37,7 @@ export const View = () => (
 					{({ active }: any) => (
 						<button
 							className={`${
-								active && 'bg-400-light dark:bg-slate-700'
+								active && 'bg-slate-100 dark:bg-slate-700'
 							} flex w-full items-center space-x-2 rounded-2xl px-4 py-3`}
 						>
 							<CalendarIcon className="mr-3" />

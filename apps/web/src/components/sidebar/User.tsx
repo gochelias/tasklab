@@ -15,8 +15,10 @@ export const User = ({ href }: any) => {
 							<Image layout="fill" alt="avatar" src={img} />
 						</div>
 						<div className="m-auto flex flex-col leading-none">
-							<p className="font-semibold">Natalie Jackson</p>
-							<p className="text-100-light text-base leading-none dark:text-slate-500">
+							<p className="font-semibold text-slate-700 dark:text-slate-200">
+								Natalie Jackson
+							</p>
+							<p className="text-base leading-none text-slate-500 dark:text-slate-400">
 								@nateson
 							</p>
 						</div>
