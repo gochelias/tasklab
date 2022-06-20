@@ -1,7 +1,6 @@
 import { SearchIcon } from '@tasklab/ui';
 import { Home } from './Home';
 import { Timeline } from './Timeline';
-import { Settings } from './Settings';
 import { User } from './User';
 import { Workspace } from './Workspace';
 
@@ -21,7 +20,6 @@ export const Sidebar = () => (
 			</div>
 		</div>
 		<div className="space-y-4 p-4">
-			<Settings href="/settings" />
 			<div>
 				<User href="/@me" />
 			</div>
