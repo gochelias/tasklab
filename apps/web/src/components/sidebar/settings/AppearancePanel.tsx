@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { RadioGroup, Tab } from '@headlessui/react';
+import { TickCircleIcon } from '@tasklab/ui';
 
 export const AppearancePanel = () => {
 	const [theme, setTheme] = useState('system');
@@ -35,10 +36,17 @@ export const AppearancePanel = () => {
 										checked
 											? 'ring-4 ring-blue-500'
 											: 'ring-2 ring-slate-100 dark:ring-slate-700'
-									} flex h-24 w-32 items-end justify-end overflow-hidden rounded-2xl bg-slate-300 pt-5 pl-5 text-xl font-medium`}
+									} relative flex h-24 w-32 items-end justify-end overflow-hidden rounded-2xl bg-slate-300 pt-5 pl-5 text-xl font-medium`}
 								>
 									<div className="h-full w-full rounded-tl-xl bg-white p-2 leading-none text-slate-700">
 										Aa
+									</div>
+									<div
+										className={`${
+											checked ? 'flex' : 'hidden'
+										} absolute m-2 text-blue-500`}
+									>
+										<TickCircleIcon active={true} />
 									</div>
 								</div>
 								<p className="text-slate-700 dark:text-slate-200">
@@ -55,10 +63,17 @@ export const AppearancePanel = () => {
 										checked
 											? 'ring-4 ring-blue-500'
 											: 'ring-2 ring-slate-200'
-									} flex h-24 w-32 items-end justify-end overflow-hidden rounded-2xl bg-slate-600 pt-5 pl-5 text-xl font-medium`}
+									} relative flex h-24 w-32 items-end justify-end overflow-hidden rounded-2xl bg-slate-600 pt-5 pl-5 text-xl font-medium`}
 								>
 									<div className="h-full w-full rounded-tl-xl bg-slate-900 p-2 leading-none text-slate-200">
 										Aa
+									</div>
+									<div
+										className={`${
+											checked ? 'flex' : 'hidden'
+										} absolute m-2 text-blue-500`}
+									>
+										<TickCircleIcon active={true} />
 									</div>
 								</div>
 								<p className="text-slate-700 dark:text-slate-200">
@@ -82,10 +97,17 @@ export const AppearancePanel = () => {
 											Aa
 										</p>
 									</div>
-									<div className="flex w-full bg-slate-600 pt-5 pl-5">
+									<div className="relative flex w-full bg-slate-600 pt-5 pl-5">
 										<p className="h-full w-full rounded-tl-xl bg-slate-900 p-2 leading-none text-slate-200">
 											Aa
 										</p>
+										<div
+											className={`${
+												checked ? 'flex' : 'hidden'
+											} absolute bottom-0 right-0 m-2 text-blue-500`}
+										>
+											<TickCircleIcon active={true} />
+										</div>
 									</div>
 								</div>
 								<p className="text-slate-700 dark:text-slate-200">
