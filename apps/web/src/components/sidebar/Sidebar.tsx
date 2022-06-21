@@ -19,10 +19,8 @@ export const Sidebar = () => (
 				<Timeline href="/timeline" />
 			</div>
 		</div>
-		<div className="space-y-4 p-4">
-			<div>
-				<User href="/@me" />
-			</div>
+		<div className="p-4">
+			<User />
 		</div>
 	</div>
 );
