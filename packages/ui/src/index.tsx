@@ -20,6 +20,7 @@ export * from './icons/SendIcon';
 export * from './icons/HomeIcon';
 export * from './icons/RowIcon';
 export * from './icons/CloseSquareIcon';
+export * from './icons/TickCircleIcon';
 
 export * from './components/SidebarButton';
 export * from './components/IconButton';

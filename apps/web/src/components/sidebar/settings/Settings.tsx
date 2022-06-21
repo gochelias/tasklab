@@ -5,6 +5,7 @@ import { Dialog, Tab, Transition } from '@headlessui/react';
 import { SettingsTab } from './SettingsTab';
 import { SettingsCategory } from './SettingsCategory';
 import { AppearancePanel } from './AppearancePanel';
+import { LanguagePanel } from './LanguagePanel';
 
 export const Settings = ({ isOpen, setIsOpen }: any) => {
 	const closeSettings = () => setIsOpen(false);
@@ -24,7 +25,7 @@ export const Settings = ({ isOpen, setIsOpen }: any) => {
 						enterTo="opacity-100 scale-100"
 						leave="ease-in duration-200"
 						leaveFrom="opacity-100 scale-100"
-						leaveTo="opacity-0 scale-110"
+						leaveTo="opacity-0 scale-95"
 					>
 						<div className="fixed inset-0 select-none text-lg">
 							<Dialog.Panel className="relative flex h-screen w-full justify-center bg-white transition-colors duration-200 ease-linear dark:bg-slate-900">
@@ -46,7 +47,7 @@ export const Settings = ({ isOpen, setIsOpen }: any) => {
 											<Tab.Panel>Account</Tab.Panel>
 											<Tab.Panel>Integrations</Tab.Panel>
 											<AppearancePanel />
-											<Tab.Panel>Language</Tab.Panel>
+											<LanguagePanel />
 											<Tab.Panel>Notifications</Tab.Panel>
 											<Tab.Panel>Keybinds</Tab.Panel>
 										</Tab.Panels>
