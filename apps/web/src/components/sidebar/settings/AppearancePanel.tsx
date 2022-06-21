@@ -111,7 +111,7 @@ export const AppearancePanel = () => {
 									</div>
 								</div>
 								<p className="text-slate-700 dark:text-slate-200">
-									System
+									Auto
 								</p>
 							</div>
 						)}
