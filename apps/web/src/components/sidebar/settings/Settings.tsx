@@ -32,8 +32,8 @@ export const Settings = ({ isOpen, setIsOpen }: any) => {
 									<Tab.Group vertical>
 										<Tab.List className="h-full space-y-3 border-r-2 border-slate-100 px-4 py-8 transition-colors duration-100 ease-linear dark:border-slate-700">
 											<SettingsCategory name="user settings" />
-											<SettingsTab tabName="Account" />
 											<SettingsTab tabName="Profile" />
+											<SettingsTab tabName="Account" />
 											<SettingsTab tabName="Integrations" />
 											<SettingsCategory name="app settings" />
 											<SettingsTab tabName="Appearance" />
@@ -42,8 +42,8 @@ export const Settings = ({ isOpen, setIsOpen }: any) => {
 											<SettingsTab tabName="Keybinds" />
 										</Tab.List>
 										<Tab.Panels className="w-full">
-											<Tab.Panel>Account</Tab.Panel>
 											<Tab.Panel>Profile</Tab.Panel>
+											<Tab.Panel>Account</Tab.Panel>
 											<Tab.Panel>Integrations</Tab.Panel>
 											<AppearancePanel />
 											<Tab.Panel>Language</Tab.Panel>
