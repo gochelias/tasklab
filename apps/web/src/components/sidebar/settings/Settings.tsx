@@ -6,6 +6,7 @@ import { SettingsTab } from './SettingsTab';
 import { SettingsCategory } from './SettingsCategory';
 import { AppearancePanel } from './AppearancePanel';
 import { LanguagePanel } from './LanguagePanel';
+import { KeyBindsPanel } from './KeybindsPanel';
 
 export const Settings = ({ isOpen, setIsOpen }: any) => {
 	const closeSettings = () => setIsOpen(false);
@@ -49,16 +50,21 @@ export const Settings = ({ isOpen, setIsOpen }: any) => {
 											<AppearancePanel />
 											<LanguagePanel />
 											<Tab.Panel>Notifications</Tab.Panel>
-											<Tab.Panel>Keybinds</Tab.Panel>
+											<KeyBindsPanel />
 										</Tab.Panels>
 									</Tab.Group>
 								</div>
-								<button
-									className="m-4 flex h-12 w-12 items-center justify-center rounded-2xl text-slate-500 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-700"
-									onClick={closeSettings}
-								>
-									<CloseSquareIcon active={true} />
-								</button>
+								<div className="flex flex-col items-center space-y-3 pt-8">
+									<button
+										className="flex h-12 w-12 items-center justify-center rounded-2xl text-slate-500 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-700"
+										onClick={closeSettings}
+									>
+										<CloseSquareIcon active={true} />
+									</button>
+									<div className="w-min rounded-md border-b-4 border-slate-500 bg-slate-300 py-1 px-2 text-xs font-semibold leading-none text-slate-700">
+										ESC
+									</div>
+								</div>
 							</Dialog.Panel>
 						</div>
 					</Transition.Child>
