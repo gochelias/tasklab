@@ -17,7 +17,7 @@ export const CommandPalette = ({ isOpen, setIsOpen }: any) => (
 					leaveFrom="opacity-100"
 					leaveTo="opacity-0"
 				>
-					<Dialog.Overlay className="fixed inset-0 bg-slate-200/75 dark:bg-slate-900/75" />
+					<Dialog.Overlay className="bg-slate-dark fixed inset-0 bg-opacity-30 filter dark:bg-opacity-60" />
 				</Transition.Child>
 				<Transition.Child
 					as={Fragment}
@@ -28,7 +28,7 @@ export const CommandPalette = ({ isOpen, setIsOpen }: any) => (
 					leaveFrom="opacity-100"
 					leaveTo="opacity-0"
 				>
-					<div className="dark:shadow-slate-dark relative mx-auto max-w-4xl rounded-3xl border-slate-700 bg-white p-2 shadow-xl shadow-slate-300 dark:bg-slate-700 dark:shadow-lg">
+					<div className="dark:shadow-slate-dark relative mx-auto max-w-4xl rounded-3xl border-slate-700 bg-white p-2 shadow-xl shadow-slate-600/25  dark:bg-slate-700 dark:shadow-lg">
 						<input
 							type="text"
 							name=""
