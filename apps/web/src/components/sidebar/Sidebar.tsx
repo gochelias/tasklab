@@ -7,7 +7,7 @@ import { User } from './User';
 import { Workspace } from './Workspace';
 
 export const Sidebar = () => {
-	const [isOpen, setIsOpen] = useState(true);
+	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<>
 			<CommandPalette isOpen={isOpen} setIsOpen={setIsOpen} />
