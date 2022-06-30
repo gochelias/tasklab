@@ -29,7 +29,7 @@ export const Sidebar = () => {
 								<div className="bg-slate-3b00 rounded-md border-b-4 border-slate-500 bg-slate-300 py-1 px-2  text-xs font-semibold leading-none text-slate-700">
 									CMD
 								</div>
-								<div className="w-min rounded-md border-b-4 border-slate-500 bg-slate-300 py-1 px-2  text-xs font-semibold leading-none text-slate-700">
+								<div className=" w-min rounded-md border-b-4 border-slate-500 bg-slate-300 py-1 px-2  text-xs font-semibold leading-none text-slate-700">
 									K
 								</div>
 							</div>

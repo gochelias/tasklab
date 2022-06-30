@@ -46,7 +46,7 @@ export const Tasks = () => {
 							<TaskStatus taskStatus="IN_PROGRESS" />
 						</div>
 						<div className="my-3">
-							<p className="text-slate-400 dark:text-slate-500">
+							<p className="leading-none text-slate-400 dark:text-slate-500">
 								Title Project
 							</p>
 							<p className="text-xl font-semibold text-slate-700 dark:text-slate-200">

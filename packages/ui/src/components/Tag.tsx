@@ -6,6 +6,6 @@ interface Tag {
 export const Tag = ({ label, emoji }: Tag) => (
 	<>
 		<p className={emoji ? 'mr-2' : ''}>{emoji}</p>
-		<p>{label}</p>
+		<p className="leading-snug">{label}</p>
 	</>
 );
