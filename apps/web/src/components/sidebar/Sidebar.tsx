@@ -23,7 +23,7 @@ export const Sidebar = () => {
 						>
 							<div className="flex">
 								<SearchIcon className="mr-3" />
-								Search
+								<p className="leading-snug">Search</p>
 							</div>
 							<div className="flex space-x-1">
 								<div className="bg-slate-3b00 rounded-md border-b-4 border-slate-500 bg-slate-300 py-1 px-2  text-xs font-semibold leading-none text-slate-700">
