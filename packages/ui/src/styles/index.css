@@ -152,4 +152,9 @@
 		rounded-full 
 		ring-[6px];
 	}
+
+	.fix-line {
+		@apply mb-0.5
+		leading-none;
+	}
 }

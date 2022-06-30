@@ -25,7 +25,7 @@ export const ItemCreateNew = ({ icon, label, setOpen }: Item) => {
 						} flex w-full items-center rounded-2xl px-4 py-3`}
 					>
 						{icon}
-						{label}
+						<p className="fix-line">{label}</p>
 					</button>
 				)}
 			</Menu.Item>
