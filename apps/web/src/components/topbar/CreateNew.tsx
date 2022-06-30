@@ -13,7 +13,7 @@ export const CreateNew = () => {
 				<Menu as="div" className="relative z-20 inline-block text-left">
 					<Menu.Button className="create-new">
 						<AddSquareIcon className="mr-3" active={true} />
-						<span className="">Create New</span>
+						<p className="mb-0.5">Create New</p>
 					</Menu.Button>
 
 					<Menu.Items>
