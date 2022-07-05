@@ -1,5 +1,5 @@
 {
-	"name": "@tasklab/server",
+	"name": "@tasklab/api",
 	"author": "@gochelias",
 	"license": "MIT",
 	"private": true,

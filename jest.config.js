@@ -1,7 +1,7 @@
 /** @type {import('@jest/types').Config.InitialOptions} */
 
 const config = {
-	roots: ['apps/server'],
+	roots: ['apps/api'],
 	transform: {
 		'^.+\\.(t|j)s$': 'ts-jest',
 	},
