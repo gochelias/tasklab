@@ -1,7 +1,7 @@
 {
 	"$schema": "https://json.schemastore.org/tsconfig",
 	"display": "@tasklab/server",
-	"extends": "@tasklab/config/tsconfig-server.json",
+	"extends": "@tasklab/config/tsconfig-api.json",
 	"include": ["."],
 	"exclude": [
 		"dist",
