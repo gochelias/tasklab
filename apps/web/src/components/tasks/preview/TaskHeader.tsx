@@ -27,18 +27,18 @@ export const TaskHeader = () => {
 			<div className="my-8 space-y-4">
 				<div className="flex select-none items-center space-x-5 text-slate-400 dark:text-slate-500">
 					<CalendarIcon />
-					<p>
+					<p className="text-slate-500 dark:text-slate-400">
 						Started{' '}
 						<span
 							title={startsAtDate}
-							className="text-slate-700 underline decoration-slate-300 dark:text-slate-200 dark:decoration-slate-600"
+							className="font-medium text-slate-700 underline decoration-slate-300 dark:text-slate-200 dark:decoration-slate-600"
 						>
 							{startsAt}
 						</span>{' '}
 						and ends{' '}
 						<span
 							title={endsAtDate}
-							className="text-slate-700 underline decoration-slate-300 dark:text-slate-200 dark:decoration-slate-600"
+							className="font-medium text-slate-700 underline decoration-slate-300 dark:text-slate-200 dark:decoration-slate-600"
 						>{`${endsAt}`}</span>
 					</p>
 				</div>
