@@ -25,10 +25,10 @@ export const Comment = (props: any) => {
 							{`Role`}
 						</p>
 					</div>
-					<p className="mt-1 text-sm font-medium leading-none text-slate-400 dark:text-slate-500">
+					<p className="mt-1.5 text-sm font-medium leading-none text-slate-400 dark:text-slate-500">
 						{`${createdAt}`}
 					</p>
-					<p className="mt-2 flex w-full max-w-[626.017px] flex-row text-slate-600 dark:text-slate-300">
+					<p className="mt-2.5 flex w-full max-w-[626.017px] flex-row text-slate-600 dark:text-slate-300">
 						{`${comment.content}`}
 					</p>
 				</div>

@@ -14,9 +14,7 @@ export const TaskTabs = () => {
 	];
 
 	const active = ({ selected }: Selected): string =>
-		selected
-			? 'task-tab-active after:content-["<br />"]'
-			: 'icon-button icon-button-hover';
+		selected ? 'task-tab-active' : 'icon-button icon-button-hover';
 
 	return (
 		<>
