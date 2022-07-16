@@ -21,7 +21,7 @@ export const Project = () => {
 				<div className="absolute w-full px-10">
 					<div className="flex items-center py-4">
 						{projectImg ? (
-							<div className="relative mr-8 h-28 w-28 overflow-hidden rounded-2xl bg-slate-100 dark:bg-slate-700">
+							<div className="relative mr-8 h-28 w-28 overflow-hidden rounded-2xl bg-slate-100 ring-2 ring-slate-100 dark:bg-slate-700 dark:ring-slate-700">
 								<Image
 									alt="img"
 									layout="fill"
