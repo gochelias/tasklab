@@ -11,7 +11,7 @@ export const Sidebar = () => {
 	return (
 		<>
 			<CommandPalette isOpen={isOpen} setIsOpen={setIsOpen} />
-			<div className="relative flex h-screen select-none flex-col justify-between border-r-2  border-slate-100 dark:border-slate-700">
+			<div className="relative flex h-screen select-none flex-col justify-between">
 				<div>
 					<div>
 						<Workspace />
