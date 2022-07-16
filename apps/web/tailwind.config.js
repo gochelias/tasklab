@@ -65,6 +65,11 @@ module.exports = {
 				},
 			},
 		},
+		variants: {
+			extend: {
+				visibility: ['sidebar'],
+			},
+		},
 	},
 	plugins: [],
 };

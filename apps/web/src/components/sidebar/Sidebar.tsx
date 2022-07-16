@@ -11,7 +11,7 @@ export const Sidebar = () => {
 	return (
 		<>
 			<CommandPalette isOpen={isOpen} setIsOpen={setIsOpen} />
-			<div className="flex h-screen select-none flex-col justify-between border-r-2 border-slate-100 dark:border-slate-700">
+			<div className="relative flex h-screen select-none flex-col justify-between border-r-2  border-slate-100 dark:border-slate-700">
 				<div>
 					<div>
 						<Workspace />
@@ -41,6 +41,10 @@ export const Sidebar = () => {
 				<div className="p-4">
 					<User />
 				</div>
+				<button className="group absolute -right-[12px] flex h-full w-6 justify-center self-end">
+					<div className="h-full w-0.5 bg-slate-100 group-hover:bg-slate-400 dark:bg-slate-700 dark:group-hover:bg-slate-500" />
+					<div className="aftercon invisible absolute mt-44 flex h-6 w-6 items-center justify-center rounded-full pb-1 text-white after:content-['‹'] group-hover:visible group-hover:bg-slate-400 dark:group-hover:bg-slate-500" />
+				</button>
 			</div>
 		</>
 	);
