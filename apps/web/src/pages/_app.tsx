@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
 		<>
 			{/* <CommandPalette /> */}
 			<div className="flex h-screen w-full text-lg">
-				<div className="w-80 max-w-xs">
+				<div className="max-w-xs">
 					<Sidebar />
 				</div>
 				<div className="relative flex flex-auto">

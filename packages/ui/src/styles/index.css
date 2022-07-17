@@ -8,21 +8,20 @@
 	}
 
 	.sidebar-button {
-		@apply flex
-		w-full
-		space-x-4 
-		rounded-2xl 
-		px-4 
-		py-3 
-		leading-none 
+		@apply flex h-12
+		items-center
+		space-x-3
+		rounded-2xl
+		py-3
+		leading-snug
 		text-slate-500
 		dark:text-slate-400;
 	}
 
 	.sidebar-button-hover {
-		@apply transition-all
-		duration-75
-		ease-linear 
+		@apply transition-colors
+		duration-100
+		ease-in-out 
 		hover:bg-slate-100 
 		dark:hover:bg-slate-700;
 	}
