@@ -7,15 +7,17 @@ export const Timeline = ({ href, sidebarIsOpen }: any) => {
 	const active = router.pathname === href;
 
 	return (
-		<Link href={href}>
-			<a className="flex">
-				<SidebarButton
-					icon={<CalendarIcon active={active} />}
-					text="Timeline"
-					active={active}
-					sidebarIsOpen={sidebarIsOpen}
-				/>
-			</a>
-		</Link>
+		<div>
+			<Link href={href}>
+				<a className="flex">
+					<SidebarButton
+						icon={<CalendarIcon active={active} />}
+						text="Timeline"
+						active={active}
+						sidebarIsOpen={sidebarIsOpen}
+					/>
+				</a>
+			</Link>
+		</div>
 	);
 };

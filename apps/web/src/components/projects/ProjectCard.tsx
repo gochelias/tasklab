@@ -4,7 +4,7 @@ export const ProjectCard = () => (
 	<>
 		<div className="">
 			<div className="select-none rounded-2xl border-2 border-slate-100 dark:border-slate-700">
-				<div className="mx-4 mt-4 flex h-24  items-center justify-between space-x-4 rounded-xl bg-slate-100 px-5 dark:bg-slate-700">
+				<div className="mx-1.5 mt-1.5 flex h-24 items-center justify-between space-x-4 rounded-xl bg-slate-100 px-5 dark:bg-slate-700">
 					<div className="flex items-center space-x-4">
 						<div className="relative h-14 w-14 overflow-hidden rounded-xl bg-slate-300 dark:bg-slate-600">
 							<Image

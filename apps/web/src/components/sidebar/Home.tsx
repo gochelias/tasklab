@@ -4,19 +4,20 @@ import Link from 'next/link';
 
 export const Home = ({ href, sidebarIsOpen }: any) => {
 	const router = useRouter();
-	const active =
-		router.pathname === href || router.pathname.includes('projects');
+	const active = router.pathname === href;
 
 	return (
-		<Link href={href}>
-			<a className="inline-block h-12 overflow-hidden">
-				<SidebarButton
-					icon={<HomeIcon active={active} />}
-					text="Home"
-					active={active}
-					sidebarIsOpen={sidebarIsOpen}
-				/>
-			</a>
-		</Link>
+		<div>
+			<Link href={href}>
+				<a>
+					<SidebarButton
+						icon={<HomeIcon active={active} />}
+						text="Home"
+						active={active}
+						sidebarIsOpen={sidebarIsOpen}
+					/>
+				</a>
+			</Link>
+		</div>
 	);
 };

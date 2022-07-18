@@ -6,6 +6,7 @@ import { CommandPalette } from '../CommandPalette';
 import { Home } from './Home';
 import { Timeline } from './Timeline';
 import { User } from './User';
+import { Projects } from './Projects';
 
 export const Sidebar = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -25,25 +26,27 @@ export const Sidebar = () => {
 					<div>
 						<Workspace sidebarIsOpen={sidebarIsOpen} />
 					</div>
-					<div className="z-0 mt-6 space-y-4 px-4 ">
-						<button
-							className={`mb-20 flex h-12 items-center rounded-2xl border-2 border-slate-100 bg-transparent text-left text-slate-500 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-400 hover:dark:bg-slate-700 ${
-								sidebarIsOpen
-									? 'w-12 justify-center'
-									: 'w-72 px-4'
+					<button
+						className={`mx-4 mb-20 mt-6 flex h-12 items-center rounded-2xl border-2 border-slate-100 bg-transparent text-left text-slate-500 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-400 hover:dark:bg-slate-700 ${
+							sidebarIsOpen ? 'w-12 justify-center' : 'w-72 px-4'
+						}`}
+						onClick={() => setIsOpen(true)}
+					>
+						<SearchIcon />
+						<span
+							className={`ml-3 leading-snug ${
+								sidebarIsOpen && 'hidden'
 							}`}
-							onClick={() => setIsOpen(true)}
 						>
-							<SearchIcon />
-							<span
-								className={`ml-3 leading-snug ${
-									sidebarIsOpen && 'hidden'
-								}`}
-							>
-								Search
-							</span>
-						</button>
+							Search
+						</span>
+					</button>
+					<div className="z-0 mt-6 space-y-4 px-4 ">
 						<Home href="/" sidebarIsOpen={sidebarIsOpen} />
+						<Projects
+							href="/projects"
+							sidebarIsOpen={sidebarIsOpen}
+						/>
 						<Timeline
 							href="/timeline"
 							sidebarIsOpen={sidebarIsOpen}
