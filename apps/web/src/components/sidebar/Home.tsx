@@ -9,7 +9,7 @@ export const Home = ({ href, sidebarIsOpen }: any) => {
 
 	return (
 		<Link href={href}>
-			<a>
+			<a className="inline-block h-12 overflow-hidden">
 				<SidebarButton
 					icon={<HomeIcon active={active} />}
 					text="Home"

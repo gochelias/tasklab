@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import { Project } from '../components/projects/Project';
+import { ProjectCard } from '../components/projects/ProjectCard';
 import { TaskPreview } from '../components/tasks/TaskPreview';
 /* import { Tasks } from '../components/task/Tasks'; */
 import { Topbar } from '../components/topbar/Topbar';

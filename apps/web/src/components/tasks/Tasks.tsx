@@ -35,6 +35,22 @@ export const Tasks = () => {
 				{ id: '2', avatar: img },
 			],
 		},
+		{
+			id: '2',
+			title: 'Title example',
+			assignedTo: [
+				{ id: '1', avatar: img },
+				{ id: '2', avatar: img },
+			],
+		},
+		{
+			id: '2',
+			title: 'Title example',
+			assignedTo: [
+				{ id: '1', avatar: img },
+				{ id: '2', avatar: img },
+			],
+		},
 	];
 
 	return (

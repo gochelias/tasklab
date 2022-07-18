@@ -3,13 +3,11 @@ import type { AppProps } from 'next/app';
 
 import { Sidebar } from '../components/sidebar/Sidebar';
 import { useDarkMode } from '../hooks/useDarkMode';
-/* import { CommandPalette } from '../components/CommandPalette'; */
 
 export default function App({ Component, pageProps }: AppProps) {
 	useDarkMode();
 	return (
 		<>
-			{/* <CommandPalette /> */}
 			<div className="flex h-screen w-full text-lg">
 				<div className="max-w-xs">
 					<Sidebar />
