@@ -1,10 +1,15 @@
 import Image from 'next/image';
+import Scrollbars from 'react-custom-scrollbars';
 
 import { AvatarsStacked } from '../tasks/AvatarStacked';
 import { Tasks } from '../tasks/Tasks';
 import { View } from './View';
 
 export const Project = () => {
+	const customThumb = () => (
+		<div className="rounded-full bg-slate-300 dark:bg-slate-600" />
+	);
+
 	const img =
 		'https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW4lMjBmYWNlfGVufDB8fDB8fA%3D%3D&w=1000&q=80';
 
@@ -17,9 +22,9 @@ export const Project = () => {
 
 	return (
 		<>
-			<div className="relative h-full overflow-auto">
+			<div className="relative h-full pt-10">
 				<div className="absolute w-full px-10">
-					<div className="flex items-center py-4">
+					<div className="mb-4 flex items-center">
 						{projectImg ? (
 							<div className="relative mr-8 h-28 w-28 overflow-hidden rounded-2xl bg-slate-100 ring-2 ring-slate-100 dark:bg-slate-700 dark:ring-slate-700">
 								<Image
@@ -47,7 +52,7 @@ export const Project = () => {
 							</div>
 						</div>
 					</div>
-					<div className="flex items-center justify-between">
+					<div className="flex w-full items-center justify-between pb-4">
 						<div className="flex items-center -space-x-2">
 							<AvatarsStacked
 								assigned={assigned}
@@ -64,11 +69,11 @@ export const Project = () => {
 					</div>
 				</div>
 				<div className="h-full pt-48">
-					<div className="h-full py-6 px-10">
-						<div className="mb-4 grid h-full grid-flow-row auto-rows-min grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-8 rounded-3xl">
+					<Scrollbars renderThumbVertical={customThumb} autoHide>
+						<div className="grid h-max grid-flow-row auto-rows-min grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-8 px-10 pb-10 pt-6">
 							<Tasks />
 						</div>
-					</div>
+					</Scrollbars>
 				</div>
 			</div>
 		</>

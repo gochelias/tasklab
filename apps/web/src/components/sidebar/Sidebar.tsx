@@ -41,7 +41,7 @@ export const Sidebar = () => {
 							Search
 						</span>
 					</button>
-					<div className="z-0 mt-6 space-y-4 px-4 ">
+					<div className="z-0 space-y-4 px-4 ">
 						<Home href="/" sidebarIsOpen={sidebarIsOpen} />
 						<Projects
 							href="/projects"
