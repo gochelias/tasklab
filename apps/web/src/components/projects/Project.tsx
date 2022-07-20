@@ -69,7 +69,10 @@ export const Project = () => {
 					</div>
 				</div>
 				<div className="h-full pt-48">
-					<Scrollbars renderThumbVertical={customThumb} autoHide>
+					<Scrollbars
+						renderThumbVertical={customThumb}
+						universal={true}
+					>
 						<div className="grid h-max grid-flow-row auto-rows-min grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-8 px-10 pb-10 pt-6">
 							<Tasks />
 						</div>
