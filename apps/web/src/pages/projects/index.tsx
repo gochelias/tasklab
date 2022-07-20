@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { Fragment } from 'react';
-import { ProjectCard } from '../components/projects/ProjectCard';
+import { ProjectCard } from '../../components/projects/ProjectCard';
 
-const Projects = () => {
+const ProjectsPage = () => {
 	const projects = [
 		{
 			id: '1',
@@ -39,4 +39,4 @@ const Projects = () => {
 	);
 };
 
-export default Projects;
+export default ProjectsPage;
