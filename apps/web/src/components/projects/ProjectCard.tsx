@@ -28,12 +28,6 @@ export const ProjectCard = (props: ProjectCardProps) => (
 				</p>
 			</div>
 			<div className="m-4 space-y-1 text-slate-400 dark:text-slate-500">
-				<a
-					href="https://github.com/gochelias"
-					className="border-blue-500 hover:border-b-2 hover:text-blue-500"
-				>
-					{props.url}
-				</a>
 				<p className="">{props.tasks} Tasks</p>
 				<p className="">{props.members} Members</p>
 			</div>
