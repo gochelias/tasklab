@@ -1,5 +1,6 @@
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
+
 import { CreateTaskForm } from './CreateTaskForm';
 
 export const ModalCreateTask = ({ isOpen, setIsOpen }: any) => {
@@ -33,8 +34,8 @@ export const ModalCreateTask = ({ isOpen, setIsOpen }: any) => {
 							leaveFrom="opacity-100 scale-100"
 							leaveTo="opacity-0 scale-95"
 						>
-							<Dialog.Panel className="flex items-center justify-center w-full h-full">
-								<div className="w-1/4 h-auto">
+							<Dialog.Panel className="flex h-full w-full items-center justify-center">
+								<div className="h-auto w-1/4">
 									<CreateTaskForm setOpen={setIsOpen} />
 								</div>
 								{/* <div className="fixed flex inset-0 items-center justify-center">

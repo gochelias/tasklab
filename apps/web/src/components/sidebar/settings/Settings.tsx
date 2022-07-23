@@ -17,22 +17,33 @@ export const Settings = ({ isOpen, setIsOpen }: any) => {
 				<Dialog
 					as="div"
 					onClose={closeSettings}
-					className="relative z-50"
+					className="relative z-50 transition-colors duration-200 ease-linear"
 				>
 					<Transition.Child
 						as={Fragment}
 						enter="ease-out duration-300"
-						enterFrom="opacity-0 scale-125"
-						enterTo="opacity-100 scale-100"
+						enterFrom="opacity-0"
+						enterTo="opacity-100"
 						leave="ease-in duration-200"
-						leaveFrom="opacity-100 scale-100"
-						leaveTo="opacity-0 scale-95"
+						leaveFrom="opacity-100"
+						leaveTo="opacity-0"
 					>
-						<div className="fixed inset-0 select-none text-lg">
-							<Dialog.Panel className="relative flex h-screen w-full justify-center bg-white transition-colors duration-200 ease-linear dark:bg-slate-900">
+						<div className="fixed inset-0 bg-white dark:bg-slate-900" />
+					</Transition.Child>
+					<div className="fixed inset-0 select-none text-lg">
+						<Transition.Child
+							as={Fragment}
+							enter="ease-out duration-300"
+							enterFrom="opacity-0 scale-95"
+							enterTo="opacity-100 scale-100"
+							leave="ease-in duration-200"
+							leaveFrom="opacity-100 scale-100"
+							leaveTo="opacity-0 scale-95"
+						>
+							<Dialog.Panel className="flex h-screen w-full justify-center">
 								<div className="flex h-full w-1/2">
 									<Tab.Group vertical>
-										<Tab.List className="h-full space-y-3 border-r-2 border-slate-100 px-4 py-8 transition-colors duration-100 ease-linear dark:border-slate-700">
+										<Tab.List className="h-full space-y-3 border-r-2 border-slate-100 px-4 py-8 transition-colors duration-200 ease-linear dark:border-slate-700">
 											<SettingsCategory name="user settings" />
 											<SettingsTab tabName="Profile" />
 											<SettingsTab tabName="Account" />
@@ -66,8 +77,8 @@ export const Settings = ({ isOpen, setIsOpen }: any) => {
 									</div>
 								</div>
 							</Dialog.Panel>
-						</div>
-					</Transition.Child>
+						</Transition.Child>
+					</div>
 				</Dialog>
 			</Transition>
 		</>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Fragment } from 'react';
+
 import { ProjectCard } from '../../components/projects/ProjectCard';
 
 const ProjectsPage = () => {
