@@ -61,7 +61,7 @@ export const Project = () => {
 							/>
 						</div>
 						<div className="flex space-x-4">
-							<button className="rounded-2xl border-2 border-slate-100 py-3 px-4 text-slate-500 dark:border-slate-700 dark:text-slate-400">
+							<button className="rounded-2xl border-2 border-slate-100 py-3 px-4 text-slate-500 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-400 dark:hover:bg-slate-800">
 								Filter
 							</button>
 							<View />

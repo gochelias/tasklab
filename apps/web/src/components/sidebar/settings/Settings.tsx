@@ -17,7 +17,7 @@ export const Settings = ({ isOpen, setIsOpen }: any) => {
 				<Dialog
 					as="div"
 					onClose={closeSettings}
-					className="relative z-50 transition-colors duration-200 ease-linear"
+					className="relative z-50"
 				>
 					<Transition.Child
 						as={Fragment}

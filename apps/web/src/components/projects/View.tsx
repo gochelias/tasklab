@@ -4,7 +4,7 @@ import { Menu } from '@headlessui/react';
 export const View = () => (
 	<>
 		<Menu as="div" className="relative z-10 inline-block text-left">
-			<Menu.Button className="flex items-center rounded-2xl border-2 border-slate-100 py-3 px-4 text-slate-500 active:bg-slate-100 dark:border-slate-700 dark:text-slate-400 dark:active:bg-slate-700">
+			<Menu.Button className="flex items-center rounded-2xl border-2 border-slate-100 py-3 px-4 text-slate-500 active:bg-slate-100 dark:border-slate-700 dark:text-slate-400 dark:hover:bg-slate-800 dark:active:bg-slate-700">
 				<CategoryIcon className="mr-3" />
 				View
 			</Menu.Button>
