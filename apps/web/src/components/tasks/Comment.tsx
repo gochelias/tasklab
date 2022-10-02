@@ -8,7 +8,7 @@ export const Comment = (props: any) => {
 
 	return (
 		<>
-			<div className="mr-4 flex space-x-4 rounded-3xl px-4 py-4">
+			<div className="mr-4 flex w-full space-x-4">
 				<div className="relative h-10 w-10 overflow-hidden rounded-full bg-slate-200 dark:bg-slate-700">
 					<Image
 						alt="avatar"

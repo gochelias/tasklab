@@ -36,8 +36,9 @@ export const TaskComments = () => {
 	];
 	return (
 		<>
+			<CreateComment />
 			<Scrollbars renderThumbVertical={customThumb}>
-				<div className="h-full">
+				<div className="h-full space-y-8 py-8">
 					{comments.length > 0 ? (
 						comments.map((comment: any) => (
 							<Fragment key={comment.id}>
@@ -51,9 +52,6 @@ export const TaskComments = () => {
 					)}
 				</div>
 			</Scrollbars>
-			<div className="flex h-20 items-end">
-				<CreateComment />
-			</div>
 		</>
 	);
 };
