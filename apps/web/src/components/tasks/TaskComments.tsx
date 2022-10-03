@@ -34,6 +34,7 @@ export const TaskComments = () => {
 			createdAt: '12 oct. 2021',
 		},
 	];
+
 	return (
 		<>
 			<CreateComment />

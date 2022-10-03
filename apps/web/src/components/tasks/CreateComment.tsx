@@ -2,8 +2,9 @@ import { SendIcon } from '@tasklab/ui';
 import { Field, Form, Formik } from 'formik';
 
 export const CreateComment = () => {
-	const handlerOnSubmit = async (values: { comment: string }) =>
-		console.log(values);
+	const handlerOnSubmit = async (values: { comment: string }) => {
+		console.log(values.comment);
+	};
 
 	return (
 		<>
