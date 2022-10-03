@@ -22,8 +22,8 @@ export const Project = () => {
 
 	return (
 		<>
-			<div className="relative h-full pt-10">
-				<div className="absolute w-full px-10">
+			<div className="flex w-full flex-auto flex-col px-10">
+				<div className="w-full">
 					<div className="mb-4 flex items-center">
 						{projectImg ? (
 							<div className="relative mr-8 h-28 w-28 overflow-hidden rounded-2xl bg-slate-100 ring-2 ring-slate-100 dark:bg-slate-700 dark:ring-slate-700">
@@ -33,9 +33,7 @@ export const Project = () => {
 									src={projectImg}
 								/>
 							</div>
-						) : (
-							''
-						)}
+						) : null}
 						<div>
 							<p className="text-6xl font-semibold text-slate-700 dark:text-slate-200">
 								Project Title
@@ -52,7 +50,7 @@ export const Project = () => {
 							</div>
 						</div>
 					</div>
-					<div className="flex w-full items-center justify-between pb-4">
+					<div className="flex items-center justify-between pb-4">
 						<div className="flex items-center -space-x-2">
 							<AvatarsStacked
 								assigned={assigned}
@@ -68,12 +66,12 @@ export const Project = () => {
 						</div>
 					</div>
 				</div>
-				<div className="h-full pt-48">
+				<div className="h-full flex-col">
 					<Scrollbars
 						renderThumbVertical={customThumb}
 						universal={true}
 					>
-						<div className="grid h-max grid-flow-row auto-rows-min grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-8 px-10 pb-10 pt-6">
+						<div className="grid h-max grid-flow-row auto-rows-min grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-8 pb-10 pt-6">
 							<Tasks />
 						</div>
 					</Scrollbars>
