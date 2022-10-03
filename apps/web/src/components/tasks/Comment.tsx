@@ -21,7 +21,7 @@ export const Comment = (props: any) => {
 						<span className="text-lg font-semibold leading-none text-slate-700 dark:text-slate-300">
 							{`${comment.author.name}`}
 						</span>
-						<span className="text-base leading-none text-slate-400">
+						<span className="text-base leading-none text-slate-500 dark:text-slate-400">
 							{comment.author.username}
 						</span>
 						<span className="w-max rounded-md bg-indigo-500 py-1 px-1.5 pb-1.5 text-xs font-medium leading-none text-white">
