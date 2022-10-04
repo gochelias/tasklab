@@ -8,7 +8,7 @@ export const View = () => (
 				<CategoryIcon className="mr-3" />
 				View
 			</Menu.Button>
-			<Menu.Items className="dark:shadow-slate-dark absolute right-0 mt-2 w-44 rounded-3xl p-2 text-slate-500 shadow-lg shadow-slate-200 dark:bg-slate-800 dark:text-slate-400">
+			<Menu.Items className="dark:shadow-slate-dark absolute right-0 mt-4 w-44 rounded-3xl p-2 text-slate-500 shadow-2xl shadow-slate-300 outline outline-1 outline-slate-50 dark:bg-slate-800 dark:text-slate-400 dark:outline-slate-700">
 				<Menu.Item>
 					{({ active }: any) => (
 						<button

@@ -10,7 +10,7 @@ export const TaskMoreOptions = ({ setIsOpen }: any) => {
 				<Menu.Button className="icon-button icon-button-hover">
 					<MoreIcon className="rotate-90" active={true} />
 				</Menu.Button>
-				<Menu.Items className="absolute right-0 mt-4 w-64 space-y-2 rounded-3xl bg-white p-2 text-slate-500 shadow-lg dark:bg-slate-800 dark:text-slate-400">
+				<Menu.Items className="dark:shadow-slate-dark absolute right-0 mt-4 w-64 space-y-2 rounded-3xl bg-white p-2 text-slate-500 shadow-2xl shadow-slate-300 outline outline-1 outline-slate-50 dark:bg-slate-800 dark:text-slate-400 dark:outline-slate-700">
 					<Menu.Item>
 						{({ active }: any) => (
 							<button

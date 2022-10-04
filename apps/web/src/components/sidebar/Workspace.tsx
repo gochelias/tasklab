@@ -33,7 +33,7 @@ export const Workspace = ({ sidebarIsOpen }: { sidebarIsOpen: boolean }) => (
 					Workspace Name
 				</p>
 			</Menu.Button>
-			<Menu.Items className="dark:shadow-slate-dark absolute mx-4 w-72 space-y-2 rounded-3xl bg-white p-2 shadow-xl shadow-slate-300 dark:bg-slate-800 dark:shadow-xl">
+			<Menu.Items className="dark:shadow-slate-dark absolute mx-4 w-72 space-y-2 rounded-3xl bg-white p-2 shadow-2xl shadow-slate-300 outline outline-1 outline-slate-50 dark:bg-slate-800 dark:shadow-xl dark:outline-slate-700">
 				{workspaces.map((workspace: any) => (
 					<Fragment key={workspace.id}>
 						<Menu.Item>
