@@ -1,11 +1,22 @@
 import Image from 'next/image';
+import { Fragment, useState } from 'react';
+import { Menu } from '@headlessui/react';
 import Scrollbars from 'react-custom-scrollbars';
 
 import { AvatarsStacked } from '../tasks/AvatarStacked';
 import { Tasks } from '../tasks/Tasks';
 import { View } from './View';
 
+enum ProjectPrivacy {
+	Private = 'Private',
+	Public = 'Public',
+}
+
 export const Project = () => {
+	const [projectPrivacy, setProjectPrivacy] = useState<ProjectPrivacy>(
+		ProjectPrivacy.Public,
+	);
+
 	const customThumb = () => (
 		<div className="rounded-full bg-slate-300 dark:bg-slate-600" />
 	);
@@ -39,7 +50,47 @@ export const Project = () => {
 								Project Title
 							</p>
 							<div className="flex space-x-10 pt-4 text-slate-400">
-								<p>Private</p>
+								<Menu as="div" className="relative">
+									<Menu.Button className="w-14 text-left">
+										{projectPrivacy}
+									</Menu.Button>
+									<Menu.Items className="dark:shadow-slate-dark absolute z-[1] mt-4 w-40 space-y-2 rounded-3xl bg-white p-2 text-slate-500 shadow-2xl shadow-slate-300 outline outline-1 outline-slate-50 dark:bg-slate-800 dark:text-slate-400 dark:outline-slate-700">
+										<Menu.Item as="div">
+											<button
+												className={`${
+													projectPrivacy ===
+													ProjectPrivacy.Private
+														? 'bg-blue-500 text-white'
+														: 'hover:bg-slate-100 dark:hover:bg-slate-700'
+												} w-full rounded-2xl px-4 py-3 text-left`}
+												onClick={() =>
+													setProjectPrivacy(
+														ProjectPrivacy.Private,
+													)
+												}
+											>
+												Private
+											</button>
+										</Menu.Item>
+										<Menu.Item as="div">
+											<button
+												className={`${
+													projectPrivacy ===
+													ProjectPrivacy.Public
+														? 'bg-blue-500 text-white'
+														: 'hover:bg-slate-100 dark:hover:bg-slate-700'
+												} w-full rounded-2xl px-4 py-3 text-left`}
+												onClick={() =>
+													setProjectPrivacy(
+														ProjectPrivacy.Public,
+													)
+												}
+											>
+												Public
+											</button>
+										</Menu.Item>
+									</Menu.Items>
+								</Menu>
 								<a
 									href=""
 									className="hover:underline hover:decoration-blue-500 hover:decoration-2"
