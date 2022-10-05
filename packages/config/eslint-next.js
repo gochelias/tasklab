@@ -8,6 +8,8 @@ module.exports = {
 		'no-unused-vars': 'off',
 		'import/prefer-default-export': 'off',
 		'import/extensions': 'off',
+		'no-shadow': 'off',
+		'@typescript-eslint/no-shadow': ['error'],
 		'@typescript-eslint/no-unused-vars': ['error'],
 	},
 };
