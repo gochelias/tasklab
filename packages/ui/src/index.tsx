@@ -21,6 +21,9 @@ export * from './icons/HomeIcon';
 export * from './icons/RowIcon';
 export * from './icons/CloseSquareIcon';
 export * from './icons/TickCircleIcon';
+export * from './icons/LockIcon';
+export * from './icons/PeopleIcon';
+export * from './icons/ArrowDownIcon';
 
 export * from './components/SidebarButton';
 export * from './components/IconButton';

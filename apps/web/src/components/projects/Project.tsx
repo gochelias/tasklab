@@ -1,3 +1,4 @@
+import { ArrowDownIcon, LockIcon, PeopleIcon } from '@tasklab/ui';
 import Image from 'next/image';
 import { Fragment, useState } from 'react';
 import { Menu } from '@headlessui/react';
@@ -8,8 +9,8 @@ import { Tasks } from '../tasks/Tasks';
 import { View } from './View';
 
 enum ProjectPrivacy {
-	Private = 'Private',
 	Public = 'Public',
+	Private = 'Private',
 }
 
 export const Project = () => {
@@ -51,27 +52,24 @@ export const Project = () => {
 							</p>
 							<div className="flex space-x-10 pt-4 text-slate-400">
 								<Menu as="div" className="relative">
-									<Menu.Button className="w-14 text-left">
-										{projectPrivacy}
+									<Menu.Button className="flex items-center text-left">
+										<span>
+											{projectPrivacy ===
+											ProjectPrivacy.Public ? (
+												<div className="flex items-center">
+													<PeopleIcon className="mr-3" />
+													<span>Public</span>
+												</div>
+											) : (
+												<div className="flex items-center">
+													<LockIcon className="mr-3" />
+													<span>Private</span>
+												</div>
+											)}
+										</span>
+										<ArrowDownIcon className="ml-2 w-5" />
 									</Menu.Button>
 									<Menu.Items className="dark:shadow-slate-dark absolute z-[1] mt-4 w-40 space-y-2 rounded-3xl bg-white p-2 text-slate-500 shadow-2xl shadow-slate-300 outline outline-1 outline-slate-50 dark:bg-slate-800 dark:text-slate-400 dark:outline-slate-700">
-										<Menu.Item as="div">
-											<button
-												className={`${
-													projectPrivacy ===
-													ProjectPrivacy.Private
-														? 'bg-blue-500 text-white'
-														: 'hover:bg-slate-100 dark:hover:bg-slate-700'
-												} w-full rounded-2xl px-4 py-3 text-left`}
-												onClick={() =>
-													setProjectPrivacy(
-														ProjectPrivacy.Private,
-													)
-												}
-											>
-												Private
-											</button>
-										</Menu.Item>
 										<Menu.Item as="div">
 											<button
 												className={`${
@@ -79,14 +77,45 @@ export const Project = () => {
 													ProjectPrivacy.Public
 														? 'bg-blue-500 text-white'
 														: 'hover:bg-slate-100 dark:hover:bg-slate-700'
-												} w-full rounded-2xl px-4 py-3 text-left`}
+												} flex w-full items-center rounded-2xl px-4 py-3 text-left`}
 												onClick={() =>
 													setProjectPrivacy(
 														ProjectPrivacy.Public,
 													)
 												}
 											>
-												Public
+												<PeopleIcon
+													className="mr-3"
+													active={
+														projectPrivacy ===
+														ProjectPrivacy.Public
+													}
+												/>
+												<span>Public</span>
+											</button>
+										</Menu.Item>
+										<Menu.Item as="div">
+											<button
+												className={`${
+													projectPrivacy ===
+													ProjectPrivacy.Private
+														? 'bg-blue-500 text-white'
+														: 'hover:bg-slate-100 dark:hover:bg-slate-700'
+												} flex w-full items-center rounded-2xl px-4 py-3 text-left`}
+												onClick={() =>
+													setProjectPrivacy(
+														ProjectPrivacy.Private,
+													)
+												}
+											>
+												<LockIcon
+													className="mr-3"
+													active={
+														projectPrivacy ===
+														ProjectPrivacy.Private
+													}
+												/>
+												<span>Private</span>
 											</button>
 										</Menu.Item>
 									</Menu.Items>
