@@ -47,12 +47,12 @@ export const Project = () => {
 							</div>
 						) : null}
 						<div>
-							<p className="text-6xl font-semibold text-slate-700 dark:text-slate-200">
-								Project Title
-							</p>
-							<div className="flex space-x-10 pt-4 text-slate-400">
+							<div className="flex items-end space-x-4">
+								<h2 className="text-6xl font-semibold text-slate-700 dark:text-slate-200">
+									Project Title
+								</h2>
 								<Menu as="div" className="relative">
-									<Menu.Button className="flex items-center text-left">
+									<Menu.Button className="flex items-center rounded-2xl px-4 py-3 text-left text-slate-500 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-700">
 										<span>
 											{projectPrivacy ===
 											ProjectPrivacy.Public ? (
@@ -69,7 +69,7 @@ export const Project = () => {
 										</span>
 										<ArrowDownIcon className="ml-2 w-5" />
 									</Menu.Button>
-									<Menu.Items className="dark:shadow-slate-dark absolute z-[1] mt-4 w-40 space-y-2 rounded-3xl bg-white p-2 text-slate-500 shadow-2xl shadow-slate-300 outline outline-1 outline-slate-50 dark:bg-slate-800 dark:text-slate-400 dark:outline-slate-700">
+									<Menu.Items className="dark:shadow-slate-dark absolute z-[1] mt-2 w-40 space-y-2 rounded-3xl bg-white p-2 text-slate-500 shadow-2xl shadow-slate-300 outline outline-1 outline-slate-50 dark:bg-slate-800 dark:text-slate-400 dark:outline-slate-700">
 										<Menu.Item as="div">
 											<button
 												className={`${
@@ -120,13 +120,15 @@ export const Project = () => {
 										</Menu.Item>
 									</Menu.Items>
 								</Menu>
+							</div>
+							<div className="flex items-center space-x-8 pt-4 text-slate-500 dark:text-slate-400">
+								<p className="">total tasks</p>
 								<a
 									href=""
 									className="hover:underline hover:decoration-blue-500 hover:decoration-2"
 								>
 									link
 								</a>
-								<p>total tasks</p>
 							</div>
 						</div>
 					</div>
