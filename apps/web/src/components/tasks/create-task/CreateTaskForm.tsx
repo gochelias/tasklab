@@ -35,29 +35,29 @@ export const CreateTaskForm = ({ setOpen }: any) => {
 	return (
 		<>
 			<Formik initialValues={initialValues} onSubmit={onSubmit}>
-				<Form className="text-lg">
+				<Form className="flex h-full w-full flex-col rounded-3xl bg-white p-8 text-lg outline outline-1 outline-slate-50 dark:bg-slate-900 dark:outline-slate-700">
 					<Field
-						className="placeholder:text-200-light dark:placeholder:text-200-dark bg-transparent text-3xl font-semibold dark:text-white"
+						className="bg-transparent text-3xl font-semibold text-slate-700 placeholder:text-slate-400 dark:text-slate-200 dark:placeholder:text-slate-500"
 						placeholder="Title"
 						id="title"
 						name="title"
 						type="text"
 						autoFocus={true}
 					/>
-					<div className="text-100-light my-8 space-y-5">
+					<div className="my-8 space-y-5 text-slate-400 dark:text-slate-500">
 						<div className="flex items-center space-x-5">
 							<CalendarIcon />
-							<div>
+							<div className="text-slate-500 dark:text-slate-400">
 								<label>Starts at </label>
 								<Field
-									className="decoration-200-light dark:decoration-200-dark bg-transparent text-black underline dark:text-white "
+									className="bg-transparent text-slate-400 underline decoration-slate-300 dark:text-slate-500 dark:decoration-slate-600"
 									id="startsAt"
 									name="startsAt"
 									type="datetime-local"
 								/>
 								<label>Ends at </label>
 								<Field
-									className="decoration-200-light dark:decoration-200-dark bg-transparent text-black underline dark:text-white"
+									className="dark:decoration-200-dark bg-transparent text-slate-400 underline decoration-slate-300 dark:text-slate-500"
 									id="endsAt"
 									name="endsAt"
 									type="date"
@@ -66,19 +66,19 @@ export const CreateTaskForm = ({ setOpen }: any) => {
 						</div>
 						<div className="flex items-center space-x-5">
 							<ProfileUserIcon />
-							<button className=" border-300-light dark:border-300-dark h-10 rounded-xl border-2 px-3 text-base">
+							<button className="rounded-xl border-2 border-slate-100 px-3 py-2 text-base text-slate-500 dark:border-slate-700 dark:text-slate-400 dark:hover:bg-slate-800 dark:active:bg-slate-700">
 								+ Invite
 							</button>
 						</div>
 						<div className="flex items-center space-x-5">
 							<TagIcon />
-							<button className="border-300-light dark:border-300-dark h-10 rounded-xl border-2 px-3 text-base">
+							<button className="rounded-xl border-2 border-slate-100 px-3 py-2 text-base text-slate-500 dark:border-slate-700 dark:text-slate-400 dark:hover:bg-slate-800 dark:active:bg-slate-700">
 								+ Add
 							</button>
 						</div>
 					</div>
 					<Field
-						className="border-300-light dark:border-300-dark placeholder:text-200-light dark:placeholder:text-200-dark my-8 h-80 w-full rounded-2xl border-2 bg-transparent p-4"
+						className="my-8 w-full flex-auto rounded-2xl border-2 border-slate-100 bg-transparent p-4 text-xl text-slate-700 placeholder:text-slate-400 dark:border-slate-700 dark:text-slate-200 dark:placeholder:text-slate-500"
 						id="description"
 						name="description"
 						component="textarea"
@@ -86,14 +86,14 @@ export const CreateTaskForm = ({ setOpen }: any) => {
 					/>
 					<div className="flex h-12 flex-row space-x-4">
 						<button
-							className="text-100-light dark:text-100-dark bg-300-light dark:bg-300-dark w-full rounded-2xl"
+							className="w-full rounded-2xl bg-slate-100 text-slate-500 dark:bg-slate-700 dark:text-slate-400"
 							onClick={closeModal}
 							type="button"
 						>
 							Cancel
 						</button>
 						<button
-							className="bg-blue-light dark:bg-blue-dark w-full rounded-2xl text-white"
+							className="w-full rounded-2xl bg-blue-500 text-white"
 							type="submit"
 						>
 							Create

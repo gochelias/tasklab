@@ -9,7 +9,11 @@ export const ModalCreateTask = ({ isOpen, setIsOpen }: any) => {
 	return (
 		<>
 			<Transition appear show={isOpen} as={Fragment}>
-				<Dialog as="div" onClose={closeModal} className="relative z-50">
+				<Dialog
+					as="div"
+					onClose={closeModal}
+					className="relative z-50 overflow-hidden"
+				>
 					<Transition.Child
 						as={Fragment}
 						enter="ease-out duration-300"
@@ -20,24 +24,22 @@ export const ModalCreateTask = ({ isOpen, setIsOpen }: any) => {
 						leaveTo="opacity-0"
 					>
 						<div
-							className="fixed inset-0 bg-white dark:bg-black"
+							className="bg-slate-dark/50 fixed inset-0 dark:bg-[#000]/50"
 							aria-hidden="true"
 						/>
 					</Transition.Child>
-					<div className="fixed inset-0 flex items-center justify-center p-4">
+					<div className="fixed inset-0 mx-auto flex h-full w-1/2 items-center justify-center">
 						<Transition.Child
 							as={Fragment}
-							enter="ease-out duration-300"
-							enterFrom="opacity-0 scale-95"
-							enterTo="opacity-100 scale-100"
+							enter="ease-in-out linear duration-300"
+							enterFrom="opacity-0 translate-y-full"
+							enterTo="opacity-100 translate-y-0"
 							leave="ease-in duration-200"
-							leaveFrom="opacity-100 scale-100"
-							leaveTo="opacity-0 scale-95"
+							leaveFrom="opacity-100 translate-y-0"
+							leaveTo="opacity-0 translate-y-full"
 						>
-							<Dialog.Panel className="flex h-full w-full items-center justify-center">
-								<div className="h-auto w-1/4">
-									<CreateTaskForm setOpen={setIsOpen} />
-								</div>
+							<Dialog.Panel className="flex h-5/6 w-2/3 items-center justify-center">
+								<CreateTaskForm setOpen={setIsOpen} />
 								{/* <div className="fixed flex inset-0 items-center justify-center">
 									<button
 										onClick={closeModal}
