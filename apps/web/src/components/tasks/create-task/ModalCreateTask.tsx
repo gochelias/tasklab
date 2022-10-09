@@ -24,30 +24,22 @@ export const ModalCreateTask = ({ isOpen, setIsOpen }: any) => {
 						leaveTo="opacity-0"
 					>
 						<div
-							className="bg-slate-dark/50 fixed inset-0 dark:bg-[#000]/50"
+							className="bg-slate-dark/60 fixed inset-0 dark:bg-[#000]/70"
 							aria-hidden="true"
 						/>
 					</Transition.Child>
 					<div className="fixed inset-0 mx-auto flex h-full w-1/2 items-center justify-center">
 						<Transition.Child
 							as={Fragment}
-							enter="ease-in-out linear duration-300"
-							enterFrom="opacity-0 translate-y-full"
-							enterTo="opacity-100 translate-y-0"
+							enter="ease-in-out linear duration-200"
+							enterFrom="opacity-0 scale-95"
+							enterTo="opacity-100 scale-100"
 							leave="ease-in duration-200"
-							leaveFrom="opacity-100 translate-y-0"
-							leaveTo="opacity-0 translate-y-full"
+							leaveFrom="opacity-100 scale-100"
+							leaveTo="opacity-0 scale-95"
 						>
 							<Dialog.Panel className="flex h-5/6 w-2/3 items-center justify-center">
 								<CreateTaskForm setOpen={setIsOpen} />
-								{/* <div className="fixed flex inset-0 items-center justify-center">
-									<button
-										onClick={closeModal}
-										className="px-4 py-3 bg-[#007AFF] rounded-2xl text-white"
-									>
-										Cancel
-									</button>
-								</div> */}
 							</Dialog.Panel>
 						</Transition.Child>
 					</div>
